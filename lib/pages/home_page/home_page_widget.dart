@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -37,15 +38,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<List<UsersRecord>>(
-      stream: queryUsersRecord(
+    return StreamBuilder<List<BudgetsRecord>>(
+      stream: queryBudgetsRecord(
         singleRecord: true,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).accent1,
+            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -59,17 +60,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             ),
           );
         }
-        List<UsersRecord> homePageUsersRecordList = snapshot.data!;
+        List<BudgetsRecord> homePageBudgetsRecordList = snapshot.data!;
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
         }
-        final homePageUsersRecord = homePageUsersRecordList.isNotEmpty
-            ? homePageUsersRecordList.first
+        final homePageBudgetsRecord = homePageBudgetsRecordList.isNotEmpty
+            ? homePageBudgetsRecordList.first
             : null;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).accent1,
+          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           body: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -96,15 +97,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                             child: Padding(
                               padding: EdgeInsets.all(2.0),
-                              child: Container(
-                                width: 50.0,
-                                height: 50.0,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Image.asset(
-                                  'assets/images/avatar.png',
+                              child: AuthUserStreamWidget(
+                                builder: (context) => Container(
+                                  width: 50.0,
+                                  height: 50.0,
+                                  clipBehavior: Clip.antiAlias,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Image.network(
+                                    currentUserPhoto,
+                                  ),
                                 ),
                               ),
                             ),
@@ -127,23 +130,27 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           .headlineSmall
                                           .override(
                                             fontFamily: 'Readex Pro',
+                                            fontSize: 18.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           4.0, 0.0, 0.0, 0.0),
-                                      child: Text(
-                                        homePageUsersRecord!.displayName,
-                                        style: FlutterFlowTheme.of(context)
-                                            .headlineSmall
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              letterSpacing: 0.0,
-                                            ),
+                                      child: AuthUserStreamWidget(
+                                        builder: (context) => Text(
+                                          currentUserDisplayName,
+                                          style: FlutterFlowTheme.of(context)
+                                              .headlineSmall
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                fontSize: 16.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -192,8 +199,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            FFLocalizations.of(context).getText(
-                              'c0dls4u5' /* $25,202 */,
+                            valueOrDefault<String>(
+                              homePageBudgetsRecord?.budgetAmount,
+                              '\$',
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall

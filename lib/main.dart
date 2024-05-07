@@ -134,8 +134,10 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
+      'homePage': HomePageWidget(),
       'MY_Card': MYCardWidget(),
       'MY_Budgets': MYBudgetsWidget(),
+      'budgetDetails': BudgetDetailsWidget(),
       'MY_profilePage': MYProfilePageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -157,6 +159,16 @@ class _NavBarPageState extends State<NavBarPage> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
+              Icons.home_outlined,
+              size: 24.0,
+            ),
+            label: FFLocalizations.of(context).getText(
+              'c805m53i' /* Acceuil */,
+            ),
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
               Icons.credit_card,
               size: 24.0,
             ),
@@ -165,7 +177,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 20.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'm8rhanhc' /* • */,
+              'm8rhanhc' /* Carte */,
             ),
             tooltip: '',
           ),
@@ -179,7 +191,17 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'ofz2zvlc' /* • */,
+              'ofz2zvlc' /* Analyser */,
+            ),
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.currency_bitcoin,
+              size: 24.0,
+            ),
+            label: FFLocalizations.of(context).getText(
+              'l53kroui' /* Trader */,
             ),
             tooltip: '',
           ),
@@ -193,7 +215,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              '8srr2k0j' /* • */,
+              '8srr2k0j' /* Profile */,
             ),
             tooltip: '',
           )

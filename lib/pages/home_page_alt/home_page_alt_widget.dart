@@ -44,7 +44,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).accent1,
+            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -61,7 +61,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
         final homePageAltUsersRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).accent1,
+          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           body: SafeArea(
             top: true,
             child: Column(
@@ -118,6 +118,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                       .headlineSmall
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        fontSize: 18.0,
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -125,15 +126,14 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 0.0, 0.0),
                                   child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'v74pa882' /* Andrew */,
-                                    ),
+                                    homePageAltUsersRecord.displayName,
                                     style: FlutterFlowTheme.of(context)
                                         .headlineSmall
                                         .override(
                                           fontFamily: 'Readex Pro',
                                           color: FlutterFlowTheme.of(context)
                                               .tertiary,
+                                          fontSize: 18.0,
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -494,7 +494,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                 Icons.circle_notifications,
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .tertiary,
+                                                        .primaryText,
                                                 size: 24.0,
                                               ),
                                             ),
@@ -569,7 +569,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                           fontFamily: 'Inter',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .tertiary,
+                                                              .secondaryBackground,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),

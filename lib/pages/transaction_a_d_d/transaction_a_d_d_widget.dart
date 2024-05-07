@@ -39,6 +39,9 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 
+    _model.transactionNameTextController ??= TextEditingController();
+    _model.transactionNameFocusNode ??= FocusNode();
+
     _model.spentAtTextController ??= TextEditingController();
     _model.spentAtFocusNode ??= FocusNode();
 
@@ -46,7 +49,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
     _model.reasonFocusNode ??= FocusNode();
 
     animationsMap.addAll({
-      'textFieldOnPageLoadAnimation1': AnimationInfo(
+      'textFieldOnPageLoadAnimation': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -66,32 +69,6 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(1.0, 0.0),
-            end: Offset(1.0, 1.0),
-          ),
-        ],
-      ),
-      'textFieldOnPageLoadAnimation2': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 170.0.ms,
-            duration: 600.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 170.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.0, 80.0),
-            end: Offset(0.0, 0.0),
-          ),
-          ScaleEffect(
-            curve: Curves.easeInOut,
-            delay: 170.0.ms,
             duration: 600.0.ms,
             begin: Offset(1.0, 0.0),
             end: Offset(1.0, 1.0),
@@ -304,7 +281,72 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                             validator: _model.textController1Validator
                                 .asValidator(context),
                           ).animateOnPageLoad(
-                              animationsMap['textFieldOnPageLoadAnimation1']!),
+                              animationsMap['textFieldOnPageLoadAnimation']!),
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                        child: TextFormField(
+                          controller: _model.transactionNameTextController,
+                          focusNode: _model.transactionNameFocusNode,
+                          autofocus: true,
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            labelText: FFLocalizations.of(context).getText(
+                              'c4h10pu3' /* Nom de la transaction  */,
+                            ),
+                            labelStyle: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  letterSpacing: 0.0,
+                                ),
+                            hintStyle: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  letterSpacing: 0.0,
+                                ),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).primary,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            errorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).error,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            focusedErrorBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).error,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                20.0, 24.0, 0.0, 24.0),
+                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Inter',
+                                    letterSpacing: 0.0,
+                                  ),
+                          validator: _model
+                              .transactionNameTextControllerValidator
+                              .asValidator(context),
                         ),
                       ),
                       Padding(
@@ -313,56 +355,63 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                         child: TextFormField(
                           controller: _model.spentAtTextController,
                           focusNode: _model.spentAtFocusNode,
+                          autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'ohewrgsv' /* Spent At */,
+                              'ya31hond' /* Spent At */,
                             ),
-                            labelStyle:
-                                FlutterFlowTheme.of(context).bodySmall.override(
-                                      fontFamily: 'Inter',
-                                      letterSpacing: 0.0,
-                                    ),
-                            enabledBorder: OutlineInputBorder(
+                            labelStyle: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  letterSpacing: 0.0,
+                                ),
+                            hintStyle: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  letterSpacing: 0.0,
+                                ),
+                            enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).alternate,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
-                            focusedBorder: OutlineInputBorder(
+                            focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0x00000000),
+                                color: FlutterFlowTheme.of(context).primary,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
-                            errorBorder: OutlineInputBorder(
+                            errorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0x00000000),
+                                color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
-                            focusedErrorBorder: OutlineInputBorder(
+                            focusedErrorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0x00000000),
+                                color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             contentPadding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 24.0, 24.0, 24.0),
+                                20.0, 24.0, 0.0, 24.0),
                           ),
                           style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
+                              FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Inter',
                                     letterSpacing: 0.0,
                                   ),
                           validator: _model.spentAtTextControllerValidator
                               .asValidator(context),
-                        ).animateOnPageLoad(
-                            animationsMap['textFieldOnPageLoadAnimation2']!),
+                        ),
                       ),
                       Padding(
                         padding:
@@ -559,7 +608,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   transactionAmount:
                                       _model.textController1.text,
                                   transactionName:
-                                      _model.spentAtTextController.text,
+                                      _model.transactionNameTextController.text,
                                   transactionTime: getCurrentTimestamp,
                                   transactionReason:
                                       _model.reasonTextController.text,

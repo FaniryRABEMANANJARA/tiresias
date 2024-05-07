@@ -33,6 +33,11 @@ class TransactionADDModel extends FlutterFlowModel<TransactionADDWidget> {
     return null;
   }
 
+  // State field(s) for TransactionName widget.
+  FocusNode? transactionNameFocusNode;
+  TextEditingController? transactionNameTextController;
+  String? Function(BuildContext, String?)?
+      transactionNameTextControllerValidator;
   // State field(s) for SpentAt widget.
   FocusNode? spentAtFocusNode;
   TextEditingController? spentAtTextController;
@@ -54,6 +59,9 @@ class TransactionADDModel extends FlutterFlowModel<TransactionADDWidget> {
   void dispose() {
     textFieldFocusNode?.dispose();
     textController1?.dispose();
+
+    transactionNameFocusNode?.dispose();
+    transactionNameTextController?.dispose();
 
     spentAtFocusNode?.dispose();
     spentAtTextController?.dispose();

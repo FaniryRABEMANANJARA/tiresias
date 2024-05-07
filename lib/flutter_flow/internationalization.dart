@@ -595,7 +595,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Ingreso',
     },
     'm8rhanhc': {
-      'en': '•',
+      'en': 'Carte',
       'ar': '•',
       'de': '•',
       'es': '•',
@@ -712,7 +712,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$2,502',
     },
     'ofz2zvlc': {
-      'en': '•',
+      'en': 'Analyser',
       'ar': '•',
       'de': '•',
       'es': '•',
@@ -814,7 +814,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     '8srr2k0j': {
-      'en': '•',
+      'en': 'Profile',
       'ar': '•',
       'de': '•',
       'es': '•',
@@ -847,7 +847,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Ingreso',
     },
     'l53kroui': {
-      'en': 'Home',
+      'en': 'Trader',
       'ar': 'مسكن',
       'de': 'Heim',
       'es': 'Casa',
@@ -1141,11 +1141,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': 'Höhe',
       'es': 'Monto',
     },
-    'ohewrgsv': {
+    'c4h10pu3': {
+      'en': 'Nom de la transaction ',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ya31hond': {
       'en': 'Spent At',
-      'ar': 'أنفقت في',
-      'de': 'Verbracht bei',
-      'es': 'gastado en',
+      'ar': '',
+      'de': '',
+      'es': '',
     },
     '3170k9n1': {
       'en': 'Office Budget',
@@ -1557,12 +1563,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': 'Gesamtsaldo',
       'es': 'Balance total',
     },
-    'c0dls4u5': {
-      'en': '\$25,202',
-      'ar': '25202 دولار',
-      'de': '25.202 \$',
-      'es': '\$25,202',
-    },
     '30yef7fj': {
       'en': 'Payroll Due',
       'ar': 'الرواتب المستحقة',
@@ -1669,7 +1669,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Notamos un pequeño cargo que está fuera de lugar en esta cuenta, revíselo.',
     },
     'c805m53i': {
-      'en': 'Home',
+      'en': 'Acceuil',
       'ar': 'مسكن',
       'de': 'Heim',
       'es': 'Casa',
@@ -1682,12 +1682,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': 'مرحبا،',
       'de': 'Herzlich willkommen,',
       'es': 'Bienvenidos,',
-    },
-    'v74pa882': {
-      'en': 'Andrew',
-      'ar': 'أندرو',
-      'de': 'Andreas',
-      'es': 'Andrés',
     },
     'rzpg3cvh': {
       'en': 'Your latest updates are below.',
@@ -2487,6 +2481,36 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': '',
       'es': '',
     },
+    'vu2uo5mk': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '1qy4hwf5': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'oc8ak6zn': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'b6cfhr3t': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'xmpkn2ed': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
     'aox3s4fb': {
       'en': '',
       'ar': '',
@@ -2512,6 +2536,42 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     '8twlwiwt': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'qnw31z49': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'obsanhci': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '1c4kf7k6': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'p0tqd2n6': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'phjbjgp5': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'tzjhst5a': {
       'en': '',
       'ar': '',
       'de': '',

@@ -166,14 +166,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'budgetDetails',
           path: '/budgetDetails',
-          builder: (context, params) => BudgetDetailsWidget(
-            budgetDetails: params.getParam(
-              'budgetDetails',
-              ParamType.DocumentReference,
-              isList: false,
-              collectionNamePath: ['budgets'],
-            ),
-          ),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'budgetDetails')
+              : BudgetDetailsWidget(
+                  budgetDetails: params.getParam(
+                    'budgetDetails',
+                    ParamType.DocumentReference,
+                    isList: false,
+                    collectionNamePath: ['budgets'],
+                  ),
+                ),
         ),
         FFRoute(
           name: 'transferComplete',
@@ -247,7 +249,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'homePage',
           path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'homePage')
+              : HomePageWidget(),
         ),
         FFRoute(
           name: 'homePage_alt',
