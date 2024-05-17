@@ -40,9 +40,9 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: Color(0xFF191970),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: Color(0xFF191970),
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -86,13 +86,6 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                   if (Theme.of(context).brightness == Brightness.dark)
                     Image.asset(
                       'assets/images/finWallet_logo_landscape.png',
-                      width: 170.0,
-                      height: 60.0,
-                      fit: BoxFit.fitWidth,
-                    ),
-                  if (!(Theme.of(context).brightness == Brightness.dark))
-                    Image.asset(
-                      'assets/images/finWallet_logo_landscapeDark@3x.png',
                       width: 170.0,
                       height: 60.0,
                       fit: BoxFit.fitWidth,
@@ -155,7 +148,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'o6prpb1q' /* Create Budgets */,
+                                                'o6prpb1q' /* Création de budgets */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -164,6 +157,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                                       .override(
                                                         fontFamily:
                                                             'Readex Pro',
+                                                        fontSize: 30.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -181,7 +175,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '292pbdw7' /* Create budgets that you can ti... */,
+                                                '292pbdw7' /* Créez des budgets auxquels vou... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -189,6 +183,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -216,11 +211,15 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 20.0),
-                                          child: Image.asset(
-                                            'assets/images/fin_onboarding_2@2x.png',
-                                            width: 300.0,
-                                            height: 300.0,
-                                            fit: BoxFit.fitHeight,
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(10.0),
+                                            child: Image.asset(
+                                              'assets/images/men-exchanging-bitcoin-with-copy-space.jpg',
+                                              width: 300.0,
+                                              height: 300.0,
+                                              fit: BoxFit.fitHeight,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -235,7 +234,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'b10xvuf9' /* Keep Track of Spending */,
+                                                'b10xvuf9' /* Suivi des dépenses */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -261,7 +260,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                't6k1smsm' /* Easily add transactions and as... */,
+                                                't6k1smsm' /* Ajoutez facilement des transac... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -269,6 +268,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -296,11 +296,15 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 30.0, 0.0, 30.0),
-                                          child: Image.asset(
-                                            'assets/images/fin_onboarding_3@2x.png',
-                                            width: 300.0,
-                                            height: 250.0,
-                                            fit: BoxFit.fitWidth,
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(12.0),
+                                            child: Image.asset(
+                                              'assets/images/6187637-removebg-preview.png',
+                                              width: 300.0,
+                                              height: 250.0,
+                                              fit: BoxFit.fitWidth,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -315,7 +319,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'u8xxj427' /* Budget Analysis */,
+                                                'u8xxj427' /* Analyse du budget */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -341,7 +345,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'iqi0pkmb' /* Know where your budgets are an... */,
+                                                'iqi0pkmb' /* Sachez où en sont vos budgets ... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -349,6 +353,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -378,6 +383,7 @@ class _TutorialPROFILEWidgetState extends State<TutorialPROFILEWidget> {
                                   duration: Duration(milliseconds: 500),
                                   curve: Curves.ease,
                                 );
+                                setState(() {});
                               },
                               effect: smooth_page_indicator.ExpandingDotsEffect(
                                 expansionFactor: 2.0,

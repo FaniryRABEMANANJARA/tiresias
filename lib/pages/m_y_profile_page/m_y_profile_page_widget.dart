@@ -51,7 +51,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFF191970),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -68,7 +68,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
         final mYProfilePageUsersRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFF191970),
           body: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -77,18 +77,11 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   height: 200.0,
                   decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 6.0,
-                        color: Color(0x4B1A1F24),
-                        offset: Offset(
-                          0.0,
-                          2.0,
-                        ),
-                      )
-                    ],
                     gradient: LinearGradient(
-                      colors: [Color(0xFF00968A), Color(0xFFF2A384)],
+                      colors: [
+                        Color(0xFF191970),
+                        FlutterFlowTheme.of(context).secondary
+                      ],
                       stops: [0.0, 1.0],
                       begin: AlignmentDirectional(0.94, -1.0),
                       end: AlignmentDirectional(-0.94, 1.0),
@@ -117,15 +110,17 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 ),
                                 child: Padding(
                                   padding: EdgeInsets.all(2.0),
-                                  child: Container(
-                                    width: 60.0,
-                                    height: 60.0,
-                                    clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/avatar.png',
+                                  child: AuthUserStreamWidget(
+                                    builder: (context) => Container(
+                                      width: 60.0,
+                                      height: 60.0,
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: Image.network(
+                                        currentUserPhoto,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -253,7 +248,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                         children: [
                           Text(
                             FFLocalizations.of(context).getText(
-                              'f1bvbey3' /* My Account */,
+                              'f1bvbey3' /* Mon compte */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -297,8 +292,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                           width: MediaQuery.sizeOf(context).width * 0.9,
                           height: 60.0,
                           decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                            color: Color(0xFF191970),
                             borderRadius: BorderRadius.circular(8.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).alternate,
@@ -314,7 +308,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'i61y9ibx' /* Edit Profile */,
+                                    'i61y9ibx' /* Modifier Profil */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -368,8 +362,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60.0,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
+                              color: Color(0xFF191970),
                               borderRadius: BorderRadius.circular(8.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -386,7 +379,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     FFLocalizations.of(context).getText(
-                                      '03k0vw86' /* Change Password */,
+                                      '03k0vw86' /* Modifier le mot de passe */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -441,8 +434,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60.0,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
+                              color: Color(0xFF191970),
                               borderRadius: BorderRadius.circular(8.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -459,7 +451,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     FFLocalizations.of(context).getText(
-                                      '6w6wv95p' /* Notification Settings */,
+                                      '6w6wv95p' /* Réglages de la notification */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -502,7 +494,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          context.pushNamed('tutorial_PROFILE');
+                          context.pushNamed('profilepage');
                         },
                         child: Material(
                           color: Colors.transparent,
@@ -514,8 +506,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60.0,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
+                              color: Color(0xFF191970),
                               borderRadius: BorderRadius.circular(8.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -532,7 +523,79 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     FFLocalizations.of(context).getText(
-                                      '9aogde79' /* Tutorial */,
+                                      '9aogde79' /* Mon portefeuille */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Inter',
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
+                                  FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 30.0,
+                                    buttonSize: 46.0,
+                                    icon: Icon(
+                                      Icons.chevron_right_rounded,
+                                      color: Color(0xFF95A1AC),
+                                      size: 25.0,
+                                    ),
+                                    onPressed: () async {
+                                      context.pushNamed('profilepage');
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('tutorial_PROFILE');
+                        },
+                        child: Material(
+                          color: Colors.transparent,
+                          elevation: 0.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Container(
+                            width: MediaQuery.sizeOf(context).width * 0.9,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                              color: Color(0xFF191970),
+                              borderRadius: BorderRadius.circular(8.0),
+                              border: Border.all(
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 2.0,
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 4.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      '7osgic41' /* Didacticiel */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -587,8 +650,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             width: MediaQuery.sizeOf(context).width * 0.9,
                             height: 60.0,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
+                              color: Color(0xFF191970),
                               borderRadius: BorderRadius.circular(8.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -605,7 +667,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 children: [
                                   Text(
                                     FFLocalizations.of(context).getText(
-                                      'eojlfs66' /* Privacy Policy */,
+                                      'eojlfs66' /* Politique de confidentialité */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -645,7 +707,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                         setDarkModeSetting(context, ThemeMode.dark);
                       },
                       text: FFLocalizations.of(context).getText(
-                        '2ll42t1u' /* Dark Mode */,
+                        '2ll42t1u' /* Mode sombre */,
                       ),
                       options: FFButtonOptions(
                         width: 130.0,

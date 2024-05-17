@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
+import '/backend/schema/structs/index.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
@@ -120,9 +121,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'MY_Card',
           path: '/mYCard',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'MY_Card')
-              : MYCardWidget(),
+          builder: (context, params) => MYCardWidget(),
         ),
         FFRoute(
           name: 'MY_Budgets',
@@ -166,16 +165,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'budgetDetails',
           path: '/budgetDetails',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'budgetDetails')
-              : BudgetDetailsWidget(
-                  budgetDetails: params.getParam(
-                    'budgetDetails',
-                    ParamType.DocumentReference,
-                    isList: false,
-                    collectionNamePath: ['budgets'],
-                  ),
-                ),
+          builder: (context, params) => BudgetDetailsWidget(
+            budgetDetails: params.getParam(
+              'budgetDetails',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['budgets'],
+            ),
+          ),
         ),
         FFRoute(
           name: 'transferComplete',
@@ -254,16 +251,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : HomePageWidget(),
         ),
         FFRoute(
-          name: 'homePage_alt',
-          path: '/homePageAlt',
-          builder: (context, params) => HomePageAltWidget(),
-        ),
-        FFRoute(
-          name: 'homePage_alt_1',
-          path: '/homePageAlt1',
-          builder: (context, params) => HomePageAlt1Widget(),
-        ),
-        FFRoute(
           name: 'budget_DELETE',
           path: '/budgetDELETE',
           builder: (context, params) => BudgetDELETEWidget(
@@ -279,6 +266,65 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'profilepage',
           path: '/profilepage',
           builder: (context, params) => ProfilepageWidget(),
+        ),
+        FFRoute(
+          name: 'Historique',
+          path: '/historique',
+          builder: (context, params) => HistoriqueWidget(),
+        ),
+        FFRoute(
+          name: 'BitcoinPrice',
+          path: '/bitcoinPrice',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'BitcoinPrice')
+              : BitcoinPriceWidget(),
+        ),
+        FFRoute(
+          name: 'NewsCrypto',
+          path: '/newsCrypto',
+          builder: (context, params) => NewsCryptoWidget(),
+        ),
+        FFRoute(
+          name: 'PortefeuilleBitcoin',
+          path: '/portefeuilleBitcoin',
+          builder: (context, params) => PortefeuilleBitcoinWidget(),
+        ),
+        FFRoute(
+          name: 'AchatsBitcoin',
+          path: '/achatsBitcoin',
+          builder: (context, params) => AchatsBitcoinWidget(),
+        ),
+        FFRoute(
+          name: 'VendreBitcoin',
+          path: '/vendreBitcoin',
+          builder: (context, params) => VendreBitcoinWidget(),
+        ),
+        FFRoute(
+          name: 'PayementBitcoin',
+          path: '/payementBitcoin',
+          builder: (context, params) => PayementBitcoinWidget(),
+        ),
+        FFRoute(
+          name: 'AlertePrix',
+          path: '/alertePrix',
+          builder: (context, params) => AlertePrixWidget(),
+        ),
+        FFRoute(
+          name: 'AjoutActualite',
+          path: '/ajoutActualite',
+          builder: (context, params) => AjoutActualiteWidget(),
+        ),
+        FFRoute(
+          name: 'Detailsactualite',
+          path: '/detailsactualite',
+          builder: (context, params) => DetailsactualiteWidget(
+            detailActualite: params.getParam(
+              'detailActualite',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['actualites'],
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -398,6 +444,7 @@ class FFParameters {
     ParamType type, {
     bool isList = false,
     List<String>? collectionNamePath,
+    StructBuilder<T>? structBuilder,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -416,6 +463,7 @@ class FFParameters {
       type,
       isList,
       collectionNamePath: collectionNamePath,
+      structBuilder: structBuilder,
     );
   }
 }
@@ -465,12 +513,9 @@ class FFRoute {
           final child = appStateNotifier.loading
               ? Container(
                   color: Colors.transparent,
-                  child: Center(
-                    child: Image.asset(
-                      'assets/images/Medical_ScheduleApp_0.0.png',
-                      width: MediaQuery.sizeOf(context).width * 1.0,
-                      fit: BoxFit.fitWidth,
-                    ),
+                  child: Image.asset(
+                    'assets/images/WhatsApp_Image_2024-04-23_at_08.59.01.jpeg',
+                    fit: BoxFit.cover,
                   ),
                 )
               : page;
@@ -536,4 +581,14 @@ class RootPageContext {
         value: RootPageContext(true, errorRoute),
         child: child,
       );
+}
+
+extension GoRouterLocationExtension on GoRouter {
+  String getCurrentLocation() {
+    final RouteMatch lastMatch = routerDelegate.currentConfiguration.last;
+    final RouteMatchList matchList = lastMatch is ImperativeRouteMatch
+        ? lastMatch.matches
+        : routerDelegate.currentConfiguration;
+    return matchList.uri.toString();
+  }
 }

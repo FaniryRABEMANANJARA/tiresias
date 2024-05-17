@@ -42,9 +42,9 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: Color(0xFF191970),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: Color(0xFF191970),
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -56,7 +56,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.of(context).primaryText,
+            color: FlutterFlowTheme.of(context).secondaryBackground,
             size: 32.0,
           ),
         ),
@@ -66,6 +66,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
                 fontFamily: 'Readex Pro',
+                color: FlutterFlowTheme.of(context).secondaryBackground,
                 letterSpacing: 0.0,
               ),
         ),
@@ -113,13 +114,16 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                       Expanded(
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '2b97u8y5' /* Enter the email associated wit... */,
+                            '2b97u8y5' /* Saisissez l'adresse électroniq... */,
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Inter',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodySmall
+                              .override(
+                                fontFamily: 'Inter',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 16.0,
+                                letterSpacing: 0.0,
+                              ),
                         ),
                       ),
                     ],
@@ -181,8 +185,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                      fillColor: Color(0xFF191970),
                       contentPadding: EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
@@ -214,10 +217,10 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                       );
                     },
                     text: FFLocalizations.of(context).getText(
-                      'if4pz6lm' /* Send Reset Link */,
+                      'if4pz6lm' /* Envoyer un lien de réinitialis... */,
                     ),
                     options: FFButtonOptions(
-                      width: 190.0,
+                      width: 200.0,
                       height: 50.0,
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
@@ -228,6 +231,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 18.0,
                                 letterSpacing: 0.0,
                               ),
                       elevation: 3.0,

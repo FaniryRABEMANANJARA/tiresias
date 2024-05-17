@@ -40,7 +40,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF191970),
       body: SafeArea(
         top: true,
         child: Column(
@@ -61,11 +61,14 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                       fit: BoxFit.fitWidth,
                     ),
                   if (!(Theme.of(context).brightness == Brightness.dark))
-                    Image.asset(
-                      'assets/images/finWallet_logo_landscapeDark@3x.png',
-                      width: 170.0,
-                      height: 60.0,
-                      fit: BoxFit.fitWidth,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(24.0),
+                      child: Image.asset(
+                        'assets/images/WhatsApp_Image_2024-04-23_at_08.59.01-removebg-preview.png',
+                        width: 200.0,
+                        height: 150.0,
+                        fit: BoxFit.fitWidth,
+                      ),
                     ),
                 ],
               ),
@@ -125,7 +128,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'i8hl2uua' /* Create Budgets */,
+                                                'i8hl2uua' /* Création de budgets */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -134,6 +137,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                       .override(
                                                         fontFamily:
                                                             'Readex Pro',
+                                                        fontSize: 30.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -151,7 +155,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'hxtwax0y' /* Create budgets that you can ti... */,
+                                                'hxtwax0y' /* Créez des budgets auxquels vou... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -159,6 +163,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -186,11 +191,15 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 20.0),
-                                          child: Image.asset(
-                                            'assets/images/fin_onboarding_2@2x.png',
-                                            width: 300.0,
-                                            height: 300.0,
-                                            fit: BoxFit.fitHeight,
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(10.0),
+                                            child: Image.asset(
+                                              'assets/images/men-exchanging-bitcoin-with-copy-space.jpg',
+                                              width: 300.0,
+                                              height: 300.0,
+                                              fit: BoxFit.fitHeight,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -205,7 +214,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'mjy3ljln' /* Keep Track of Spending */,
+                                                'mjy3ljln' /* Suivre l'évolution des dépense... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -214,6 +223,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                       .override(
                                                         fontFamily:
                                                             'Readex Pro',
+                                                        fontSize: 30.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -231,7 +241,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'uf9k1spp' /* Easily add transactions and as... */,
+                                                'uf9k1spp' /* Ajoutez facilement des transac... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -239,6 +249,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -266,11 +277,15 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 30.0, 0.0, 30.0),
-                                          child: Image.asset(
-                                            'assets/images/fin_onboarding_3@2x.png',
-                                            width: 300.0,
-                                            height: 250.0,
-                                            fit: BoxFit.fitWidth,
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(10.0),
+                                            child: Image.asset(
+                                              'assets/images/6187637.jpg',
+                                              width: 300.0,
+                                              height: 250.0,
+                                              fit: BoxFit.fitWidth,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -285,7 +300,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '9c4outzf' /* Budget Analysis */,
+                                                '9c4outzf' /* Analyse du budget */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -311,7 +326,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'q30ina4f' /* Know where your budgets are an... */,
+                                                'q30ina4f' /* Sachez où en sont vos budgets ... */,
                                               ),
                                               textAlign: TextAlign.center,
                                               style:
@@ -319,6 +334,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -348,6 +364,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                   duration: Duration(milliseconds: 500),
                                   curve: Curves.ease,
                                 );
+                                setState(() {});
                               },
                               effect: smooth_page_indicator.ExpandingDotsEffect(
                                 expansionFactor: 2.0,
@@ -392,7 +409,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         );
                       },
                       text: FFLocalizations.of(context).getText(
-                        'ypt7b97g' /* Create Your Budget */,
+                        'ypt7b97g' /* Créez votre budget */,
                       ),
                       options: FFButtonOptions(
                         width: 200.0,

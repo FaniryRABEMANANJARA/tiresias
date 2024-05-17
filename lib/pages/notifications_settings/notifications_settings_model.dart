@@ -16,8 +16,6 @@ class NotificationsSettingsModel
   bool? switchListTileValue1;
   // State field(s) for SwitchListTile widget.
   bool? switchListTileValue2;
-  // State field(s) for SwitchListTile widget.
-  bool? switchListTileValue3;
 
   @override
   void initState(BuildContext context) {}

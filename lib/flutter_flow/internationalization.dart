@@ -110,67 +110,67 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // loginPage
   {
     'o07j3mgv': {
-      'en': 'Welcome back',
+      'en': 'Bienvenue à nouveau',
       'ar': 'البدء',
       'de': 'Loslegen',
       'es': 'Empezar',
     },
     'fzxvw3mu': {
-      'en': 'Login to access your account below.',
+      'en': 'Connectez-vous pour accéder à votre compte.',
       'ar': 'قم بإنشاء حسابك أدناه.',
       'de': 'Erstellen Sie unten Ihr Konto.',
       'es': 'Crea tu cuenta a continuación.',
     },
     'a9j78va9': {
-      'en': 'Email Address',
+      'en': 'Adresse e-mail',
       'ar': 'عنوان البريد الالكترونى',
       'de': 'E-Mail-Addresse',
       'es': 'Dirección de correo electrónico',
     },
     'i7f18cve': {
-      'en': 'Enter your email...',
+      'en': 'Saisissez votre email...',
       'ar': 'أدخل بريدك الإلكتروني ...',
       'de': 'Geben sie ihre E-Mail Adresse ein...',
       'es': 'Introduce tu correo electrónico...',
     },
     'wztjmbn8': {
-      'en': 'Password',
+      'en': 'Mot de passe',
       'ar': 'كلمة المرور',
       'de': 'Passwort',
       'es': 'Contraseña',
     },
     'lw1jpm1f': {
-      'en': 'Enter your password...',
+      'en': 'Saisissez votre mot de passe...',
       'ar': 'ادخل رقمك السري...',
       'de': 'Geben Sie Ihr Passwort ein...',
       'es': 'Ingresa tu contraseña...',
     },
     'm2xyjvuf': {
-      'en': 'Forgot Password?',
+      'en': 'Mot de passe oublié ?',
       'ar': 'هل نسيت كلمة السر؟',
       'de': 'Passwort vergessen?',
       'es': '¿Has olvidado tu contraseña?',
     },
     'qbmoi1av': {
-      'en': 'Login',
+      'en': 'Connexion',
       'ar': 'تسجيل الدخول',
       'de': 'Anmeldung',
       'es': 'Acceso',
     },
     'cjqb8ial': {
-      'en': 'Don\'t have an account?',
+      'en': 'Vous n\'avez pas de compte ?',
       'ar': 'ليس لديك حساب؟',
       'de': 'Sie haben kein Konto?',
       'es': '¿No tienes una cuenta?',
     },
     'a0iimirx': {
-      'en': 'Create',
+      'en': 'Créer',
       'ar': 'ليس لديك حساب؟',
       'de': 'Sie haben kein Konto?',
       'es': '¿No tienes una cuenta?',
     },
     '1zqiw31h': {
-      'en': 'Continue as Guest',
+      'en': 'Continuer en tant qu\'invité',
       'ar': 'تواصل كضيف',
       'de': 'Als Gast fortfahren',
       'es': 'Continua como invitado',
@@ -184,74 +184,68 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // registerAccount
   {
-    'gpokmd81': {
-      'en': 'Get Started',
-      'ar': 'البدء',
-      'de': 'Loslegen',
-      'es': 'Empezar',
-    },
     'oitrrwgg': {
-      'en': 'Create your account below.',
+      'en': 'Créer votre compte ci-dessous.',
       'ar': 'قم بإنشاء حسابك أدناه.',
       'de': 'Erstellen Sie unten Ihr Konto.',
       'es': 'Crea tu cuenta a continuación.',
     },
     'gcwdqm4g': {
-      'en': 'Email Address',
+      'en': 'Adresse email',
       'ar': 'عنوان البريد الالكترونى',
       'de': 'E-Mail-Addresse',
       'es': 'Dirección de correo electrónico',
     },
     'iam0xgwx': {
-      'en': 'Enter your email...',
+      'en': 'Entrez votre email...',
       'ar': 'أدخل بريدك الإلكتروني ...',
       'de': 'Geben sie ihre E-Mail Adresse ein...',
       'es': 'Introduce tu correo electrónico...',
     },
     'bqv15dcf': {
-      'en': 'Password',
+      'en': 'Mot de passe',
       'ar': 'كلمة المرور',
       'de': 'Passwort',
       'es': 'Contraseña',
     },
     'joih97mn': {
-      'en': 'Enter your password...',
+      'en': 'Entrez votre mot de passe...',
       'ar': 'ادخل رقمك السري...',
       'de': 'Geben Sie Ihr Passwort ein...',
       'es': 'Ingresa tu contraseña...',
     },
     'rzpiwq9p': {
-      'en': 'Confirm Password',
+      'en': 'Confirmer le mot de passe',
       'ar': 'تأكيد كلمة المرور',
       'de': 'Kennwort bestätigen',
       'es': 'Confirmar contraseña',
     },
     'eyfkffka': {
-      'en': 'Enter your password...',
+      'en': 'Entrez votre mot de passe...',
       'ar': 'ادخل رقمك السري...',
       'de': 'Geben Sie Ihr Passwort ein...',
       'es': 'Ingresa tu contraseña...',
     },
     '5kmjfwsk': {
-      'en': 'Create Account',
+      'en': 'Créer un compte',
       'ar': 'إنشاء حساب',
       'de': 'Benutzerkonto erstellen',
       'es': 'Crear una cuenta',
     },
     '3twynvfz': {
-      'en': 'Login',
+      'en': 'Se connecter',
       'ar': 'هل لديك حساب؟',
       'de': 'Sie haben bereits ein Konto?',
       'es': '¿Ya tienes una cuenta?',
     },
     '9ssznj0g': {
-      'en': 'Already have an account?',
+      'en': 'Vous avez déjà un compte ?',
       'ar': 'هل لديك حساب؟',
       'de': 'Sie haben bereits ein Konto?',
       'es': '¿Ya tienes una cuenta?',
     },
     '3ugmx2zp': {
-      'en': 'Continue as Guest',
+      'en': 'Continuer en tant qu\'invité',
       'ar': 'تواصل كضيف',
       'de': 'Als Gast fortfahren',
       'es': 'Continua como invitado',
@@ -272,20 +266,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Perfil completo',
     },
     'r6npjsue': {
-      'en': 'Upload a photo for us to easily identify you.',
+      'en':
+          'Téléchargez une photo pour que nous puissions vous identifier facilement.',
       'ar': 'قم بتحميل صورة لنا للتعرف عليك بسهولة.',
       'de':
           'Laden Sie ein Foto hoch, damit wir Sie leicht identifizieren können.',
       'es': 'Sube una foto para que te identifiquemos fácilmente.',
     },
     'sdptn7dd': {
-      'en': 'Your Name',
+      'en': 'Nom et prénom(s)',
       'ar': 'اسمك',
       'de': 'Dein Name',
       'es': 'Tu nombre',
     },
     'n636qnrx': {
-      'en': 'Your Age',
+      'en': 'Votre âge',
       'ar': 'عمرك',
       'de': 'Ihr Alter',
       'es': 'Su edad',
@@ -297,25 +292,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'es decir, 34',
     },
     '72ii0waq': {
-      'en': 'Your Title',
+      'en': 'Bio',
       'ar': 'لقبك',
       'de': 'Dein Titel',
       'es': 'Tu título',
     },
     'pf8glhkg': {
-      'en': 'What is your position?',
+      'en': '',
       'ar': 'ماهوموقعك؟',
       'de': 'Wo befinden Sie sich?',
       'es': '¿Cual es tu posicion?',
     },
     'hbhd3bdt': {
-      'en': 'Complete Profile',
+      'en': 'Valider',
       'ar': 'الملف الشخصي الكامل',
       'de': 'Vollständiges Profil',
       'es': 'Perfil completo',
     },
     'w75dikic': {
-      'en': 'Skip for Now',
+      'en': 'Sautez pour l\'instant',
       'ar': 'تخطي في الوقت الراهن',
       'de': 'Für jetzt überspringen',
       'es': 'Saltar por ahora',
@@ -348,14 +343,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // forgotPassword
   {
     'g416xg9f': {
-      'en': 'Forgot Password',
+      'en': 'Mot de passe oublié',
       'ar': 'هل نسيت كلمة السر',
       'de': 'Passwort vergessen',
       'es': 'Has olvidado tu contraseña',
     },
     'xaiad71o': {
       'en':
-          'Enter the email associated with your account and we will send you a verification code.',
+          'Saisissez l\'adresse électronique associée à votre compte et nous vous enverrons un code de vérification.',
       'ar': 'أدخل البريد الإلكتروني المرتبط بحسابك وسنرسل لك رمز التحقق.',
       'de':
           'Geben Sie die mit Ihrem Konto verknüpfte E-Mail-Adresse ein und wir senden Ihnen einen Bestätigungscode.',
@@ -363,19 +358,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Introduce el correo electrónico asociado a tu cuenta y te enviaremos un código de verificación.',
     },
     'u4nuk910': {
-      'en': 'Email Address',
+      'en': 'Adresse email',
       'ar': 'عنوان البريد الالكترونى',
       'de': 'E-Mail-Addresse',
       'es': 'Dirección de correo electrónico',
     },
     '37kotxi0': {
-      'en': 'Enter your email...',
+      'en': 'Saisissez votre email...',
       'ar': 'أدخل بريدك الإلكتروني ...',
       'de': 'Geben sie ihre E-Mail Adresse ein...',
       'es': 'Introduce tu correo electrónico...',
     },
     'hiwpaze1': {
-      'en': 'Send Reset Link',
+      'en': 'Envoyer le lien de réinitialisation',
       'ar': 'أرسل رابط إعادة التعيين',
       'de': 'Zurücksetzen-Link senden',
       'es': 'Enviar enlace de reinicio',
@@ -390,14 +385,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // onboarding
   {
     'i8hl2uua': {
-      'en': 'Create Budgets',
+      'en': 'Création de budgets',
       'ar': 'إنشاء الميزانيات',
       'de': 'Erstellen Sie Budgets',
       'es': 'Crear presupuestos',
     },
     'hxtwax0y': {
       'en':
-          'Create budgets that you can tie transactions too in order for easy tracking.',
+          'Créez des budgets auxquels vous pouvez rattacher les transactions afin d\'en faciliter le suivi.',
       'ar':
           'قم بإنشاء ميزانيات يمكنك ربط المعاملات بها أيضًا من أجل التتبع السهل.',
       'de':
@@ -406,14 +401,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Cree presupuestos en los que también pueda vincular transacciones para facilitar el seguimiento.',
     },
     'mjy3ljln': {
-      'en': 'Keep Track of Spending',
+      'en': 'Suivre l\'évolution des dépenses',
       'ar': 'تتبع الإنفاق',
       'de': 'Behalten Sie die Ausgaben im Auge',
       'es': 'Mantenga un registro de los gastos',
     },
     'uf9k1spp': {
       'en':
-          'Easily add transactions and associate them with budgets that have been created.',
+          'Ajoutez facilement des transactions et associez-les aux budgets qui ont été créés.',
       'ar': 'أضف المعاملات بسهولة وربطها بالميزانيات التي تم إنشاؤها.',
       'de':
           'Fügen Sie ganz einfach Transaktionen hinzu und verknüpfen Sie sie mit erstellten Budgets.',
@@ -421,19 +416,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Agregue fácilmente transacciones y asócielas con los presupuestos que se han creado.',
     },
     '9c4outzf': {
-      'en': 'Budget Analysis',
+      'en': 'Analyse du budget',
       'ar': 'تحليل الميزانية',
       'de': 'Budgetanalyse',
       'es': 'Análisis de presupuesto',
     },
     'q30ina4f': {
-      'en': 'Know where your budgets are and how they can be adjusted.',
+      'en':
+          'Sachez où en sont vos budgets et comment ils peuvent être ajustés.',
       'ar': 'تعرف على مكان ميزانياتك وكيف يمكن تعديلها.',
       'de': 'Wissen, wo Ihre Budgets sind und wie sie angepasst werden können.',
       'es': 'Sepa dónde están sus presupuestos y cómo se pueden ajustar.',
     },
     'ypt7b97g': {
-      'en': 'Create Your Budget',
+      'en': 'Créez votre budget',
       'ar': 'إنشاء ميزانيتك',
       'de': 'Erstellen Sie Ihr Budget',
       'es': 'Crea tu presupuesto',
@@ -448,19 +444,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // createBudgetBegin
   {
     'xod9iwab': {
-      'en': 'Create Budget',
+      'en': 'Création du budget',
       'ar': 'إنشاء الميزانية',
       'de': 'Budget erstellen',
       'es': 'Crear presupuesto',
     },
     'wih71x51': {
-      'en': 'Amount',
+      'en': 'Montant',
       'ar': 'مقدار',
       'de': 'Höhe',
       'es': 'Monto',
     },
     'qk15nsmc': {
-      'en': 'Budget Name',
+      'en': 'Nom du budget',
       'ar': 'اسم الميزانية',
       'de': 'Budgetname',
       'es': 'Nombre del presupuesto',
@@ -472,13 +468,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Descripción',
     },
     'v2shqq3z': {
-      'en': 'Create Budget',
+      'en': 'Établir un budget',
       'ar': 'إنشاء الميزانية',
       'de': 'Budget erstellen',
       'es': 'Crear presupuesto',
     },
     'knu0nxbp': {
-      'en': 'Tap above to complete request',
+      'en': 'Tapez ci-dessus pour compléter la demande',
       'ar': 'اضغط أعلاه لإكمال الطلب',
       'de': 'Tippen Sie oben, um die Anfrage abzuschließen',
       'es': 'Toque arriba para completar la solicitud',
@@ -511,7 +507,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Equilibrio',
     },
     'h3086ma4': {
-      'en': '\$7,630',
+      'en': '\$',
       'ar': '7630 دولارًا',
       'de': '\$7.630',
       'es': '\$7,630',
@@ -571,7 +567,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Servicio rapido',
     },
     '8bnd6lco': {
-      'en': 'Transfer',
+      'en': 'Transferts',
       'ar': 'تحويل',
       'de': 'Transfer',
       'es': 'Transferir',
@@ -604,7 +600,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // MY_Budgets
   {
     'cd0zp71n': {
-      'en': 'My Budget',
+      'en': 'Mon budget',
       'ar': 'ميزانيتي',
       'de': 'Mein Budget',
       'es': 'Mi presupuesto',
@@ -712,7 +708,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$2,502',
     },
     'ofz2zvlc': {
-      'en': 'Analyser',
+      'en': 'Wallet',
       'ar': '•',
       'de': '•',
       'es': '•',
@@ -727,31 +723,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Detalles',
     },
     'zv72ekdw': {
-      'en': 'Amount',
+      'en': 'Montant',
       'ar': 'مقدار',
       'de': 'Höhe',
       'es': 'Monto',
     },
     '0rjyjwed': {
-      'en': 'Vendor',
+      'en': 'Vendeur',
       'ar': 'بائع',
       'de': 'Verkäufer',
       'es': 'Vendedor',
     },
     'eeyn6dk2': {
-      'en': 'When',
+      'en': 'Date',
       'ar': 'متى',
       'de': 'Wann',
       'es': 'Cuándo',
     },
     'lccxx6eu': {
-      'en': 'Reason',
+      'en': 'Raison',
       'ar': 'سبب',
       'de': 'Grund',
       'es': 'Razón',
     },
     'jzyax4hn': {
-      'en': 'Spent by',
+      'en': 'Dépensé par',
       'ar': 'أنفقه',
       'de': 'Verbracht von',
       'es': 'gastado por',
@@ -766,43 +762,49 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // MY_profilePage
   {
     'f1bvbey3': {
-      'en': 'My Account',
+      'en': 'Mon compte',
       'ar': 'حسابي',
       'de': 'Mein Konto',
       'es': 'Mi cuenta',
     },
     'i61y9ibx': {
-      'en': 'Edit Profile',
+      'en': 'Modifier Profil',
       'ar': 'تعديل الملف الشخصي',
       'de': 'Profil bearbeiten',
       'es': 'Editar perfil',
     },
     '03k0vw86': {
-      'en': 'Change Password',
+      'en': 'Modifier le mot de passe',
       'ar': 'تغيير كلمة المرور',
       'de': 'Kennwort ändern',
       'es': 'Cambia la contraseña',
     },
     '6w6wv95p': {
-      'en': 'Notification Settings',
+      'en': 'Réglages de la notification',
       'ar': 'إعدادات الإشعار',
       'de': 'Benachrichtigungseinstellungen',
       'es': 'Configuración de las notificaciones',
     },
     '9aogde79': {
-      'en': 'Tutorial',
+      'en': 'Mon portefeuille',
+      'ar': 'درس تعليمي',
+      'de': 'Lernprogramm',
+      'es': 'Tutorial',
+    },
+    '7osgic41': {
+      'en': 'Didacticiel',
       'ar': 'درس تعليمي',
       'de': 'Lernprogramm',
       'es': 'Tutorial',
     },
     'eojlfs66': {
-      'en': 'Privacy Policy',
+      'en': 'Politique de confidentialité',
       'ar': 'سياسة الخصوصية',
       'de': 'Datenschutz-Bestimmungen',
       'es': 'Política de privacidad',
     },
     '2ll42t1u': {
-      'en': 'Dark Mode',
+      'en': 'Mode sombre',
       'ar': '',
       'de': '',
       'es': '',
@@ -814,7 +816,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     '8srr2k0j': {
-      'en': 'Profile',
+      'en': 'Profil',
       'ar': '•',
       'de': '•',
       'es': '•',
@@ -822,14 +824,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // budgetDetails
   {
+    '92alvg49': {
+      'en': '\$25,000',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
     'p0gf1lfy': {
-      'en': 'Per Month',
+      'en': 'Par mois',
       'ar': 'كل شهر',
       'de': 'Pro Monat',
       'es': 'Por mes',
     },
     'ti7ipegi': {
-      'en': 'Total Spent',
+      'en': 'Total ',
       'ar': 'إجمال الصرف',
       'de': 'Gesamtausgaben',
       'es': 'Total gastado',
@@ -847,7 +855,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Ingreso',
     },
     'l53kroui': {
-      'en': 'Trader',
+      'en': '',
       'ar': 'مسكن',
       'de': 'Heim',
       'es': 'Casa',
@@ -1016,13 +1024,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // requestFunds
   {
     'wv1862li': {
-      'en': 'Request Funds',
+      'en': 'Demande de fonds',
       'ar': 'طلب التمويل',
       'de': 'Geld anfordern',
       'es': 'Pedír fondos',
     },
     't2kyh5p5': {
-      'en': '\$ Amount',
+      'en': '\$ Montant',
       'ar': '',
       'de': '',
       'es': '',
@@ -1046,25 +1054,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Pago CCA',
     },
     'wo9cebk7': {
-      'en': 'Select Transfer',
+      'en': 'Séléctionner Transfert',
       'ar': '',
       'de': '',
       'es': '',
     },
     'rcevwwju': {
-      'en': 'Reason',
+      'en': 'Raison',
       'ar': 'سبب',
       'de': 'Grund',
       'es': 'Razón',
     },
     'uvrt7im0': {
-      'en': 'Request Funds',
+      'en': 'Demande de fonds',
       'ar': 'طلب التمويل',
       'de': 'Geld anfordern',
       'es': 'Pedír fondos',
     },
     '7y89msg9': {
-      'en': 'Tap above to complete request',
+      'en': 'Tapez ci-dessus pour compléter la demande',
       'ar': 'اضغط أعلاه لإكمال الطلب',
       'de': 'Tippen Sie oben, um die Anfrage abzuschließen',
       'es': 'Toque arriba para completar la solicitud',
@@ -1079,19 +1087,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // createBudget
   {
     'smbfunwu': {
-      'en': 'Create Budget',
+      'en': 'Création du budget',
       'ar': 'إنشاء الميزانية',
       'de': 'Budget erstellen',
       'es': 'Crear presupuesto',
     },
     'fcgw57wj': {
-      'en': 'Amount',
+      'en': 'Montant',
       'ar': 'مقدار',
       'de': 'Höhe',
       'es': 'Monto',
     },
     'onjddqdc': {
-      'en': 'Budget Name',
+      'en': 'Nom du budget',
       'ar': 'اسم الميزانية',
       'de': 'Budgetname',
       'es': 'Nombre del presupuesto',
@@ -1103,13 +1111,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     '0iex13x2': {
-      'en': 'Create Budget',
+      'en': 'Établir un budget',
       'ar': 'إنشاء الميزانية',
       'de': 'Budget erstellen',
       'es': 'Crear presupuesto',
     },
     'jy5q09h1': {
-      'en': 'Tap above to complete request',
+      'en': 'Tapez ci-dessus pour compléter la demande',
       'ar': 'اضغط أعلاه لإكمال الطلب',
       'de': 'Tippen Sie oben, um die Anfrage abzuschließen',
       'es': 'Toque arriba para completar la solicitud',
@@ -1130,13 +1138,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // transaction_ADD
   {
     'qywon4k1': {
-      'en': 'Add Transaction',
+      'en': 'Ajouter une transaction',
       'ar': 'أضف معاملة',
       'de': 'Transaktion hinzufügen',
       'es': 'Agregar transacción',
     },
     'bh9tad8e': {
-      'en': 'Amount',
+      'en': 'Montant',
       'ar': 'مقدار',
       'de': 'Höhe',
       'es': 'Monto',
@@ -1148,49 +1156,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'ya31hond': {
-      'en': 'Spent At',
+      'en': 'Dépensé à',
       'ar': '',
       'de': '',
       'es': '',
     },
-    '3170k9n1': {
-      'en': 'Office Budget',
-      'ar': 'ميزانية المكتب',
-      'de': 'Bürobudget',
-      'es': 'Presupuesto de oficina',
-    },
-    'abz6nm8z': {
-      'en': 'External Transfer',
-      'ar': 'التحويل الخارجي',
-      'de': 'Externe Übertragung',
-      'es': 'Transferencia externa',
-    },
-    '3y95vtb6': {
-      'en': 'ACH Payment',
-      'ar': 'دفع ACH',
-      'de': 'ACH-Zahlung',
-      'es': 'Pago CCA',
-    },
-    '861el4k4': {
-      'en': 'Select Budget',
-      'ar': 'حدد الميزانية',
-      'de': 'Wählen Sie Budget aus',
-      'es': 'Seleccionar presupuesto',
-    },
     '31lary2h': {
-      'en': 'Raison',
+      'en': 'Motif',
       'ar': '',
       'de': '',
       'es': '',
     },
     'uqfgu088': {
-      'en': 'Add Transaction',
+      'en': 'Valider',
       'ar': 'أضف معاملة',
       'de': 'Transaktion hinzufügen',
       'es': 'Agregar transacción',
     },
     '9stmpsf0': {
-      'en': 'Tap above to complete request',
+      'en': 'Tapez ci-dessus pour compléter la demande',
       'ar': 'اضغط أعلاه لإكمال الطلب',
       'de': 'Tippen Sie oben, um die Anfrage abzuschließen',
       'es': 'Toque arriba para completar la solicitud',
@@ -1241,13 +1225,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Seleccionar presupuesto',
     },
     '3eftlbxd': {
-      'en': 'Update Transaction',
+      'en': 'Mise à jour de la transaction',
       'ar': 'تحديث المعاملة',
       'de': 'Transaktion aktualisieren',
       'es': 'Actualizar transacción',
     },
     '4atjd0yh': {
-      'en': 'Tap above to save your changes.',
+      'en': 'Appuyez sur ci-dessus pour enregistrer vos modifications.',
       'ar': 'اضغط أعلاه لحفظ التغييرات الخاصة بك.',
       'de': 'Tippen Sie oben, um Ihre Änderungen zu speichern.',
       'es': 'Toca arriba para guardar tus cambios.',
@@ -1268,19 +1252,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // editProfile
   {
     '4rzqov3y': {
-      'en': 'Edit Profile',
+      'en': 'Modification Profile',
       'ar': 'تعديل الملف الشخصي',
       'de': 'Profil bearbeiten',
       'es': 'Editar perfil',
     },
     'zoxan2gi': {
-      'en': 'Change Photo',
+      'en': 'Changer de photo',
       'ar': 'غير الصوره',
       'de': 'Foto ändern',
       'es': 'Cambiar foto',
     },
     '3p9y21e2': {
-      'en': 'Your Name',
+      'en': 'Nom et prénom',
       'ar': 'اسمك',
       'de': 'Dein Name',
       'es': 'Tu nombre',
@@ -1292,7 +1276,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Por favor ingrese un número valido...',
     },
     'z4fstn5l': {
-      'en': 'Email Address',
+      'en': 'Adresse email',
       'ar': 'عنوان البريد الالكترونى',
       'de': 'E-Mail-Addresse',
       'es': 'Dirección de correo electrónico',
@@ -1304,7 +1288,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Tu correo electrónico',
     },
     '8h1cjk5a': {
-      'en': 'Your Age',
+      'en': 'Votre Âge',
       'ar': 'عمرك',
       'de': 'Ihr Alter',
       'es': 'Su edad',
@@ -1316,13 +1300,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'es decir, 34',
     },
     'zvymbfia': {
-      'en': 'Your Title',
+      'en': 'Votre Bio',
       'ar': 'لقبك',
       'de': 'Dein Titel',
       'es': 'Tu título',
     },
     'i6edcl52': {
-      'en': 'Save Changes',
+      'en': 'Modification',
       'ar': 'حفظ التغييرات',
       'de': 'Änderungen speichern',
       'es': 'Guardar cambios',
@@ -1344,7 +1328,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '2b97u8y5': {
       'en':
-          'Enter the email associated with your account and we will send you link to reset your password.',
+          'Saisissez l\'adresse électronique associée à votre compte et nous vous enverrons un lien pour réinitialiser votre mot de passe.',
       'ar':
           'أدخل البريد الإلكتروني المرتبط بحسابك وسنرسل لك رابطًا لإعادة تعيين كلمة المرور الخاصة بك.',
       'de':
@@ -1365,7 +1349,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Introduce tu correo electrónico...',
     },
     'if4pz6lm': {
-      'en': 'Send Reset Link',
+      'en': 'Envoyer un lien de réinitialisation',
       'ar': 'أرسل رابط إعادة التعيين',
       'de': 'Zurücksetzen-Link senden',
       'es': 'Enviar enlace de reinicio',
@@ -1387,7 +1371,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'r72zvrv5': {
       'en':
-          'Choose what notifcations you want to recieve below and we will update the settings.',
+          'Choisissez les notifications que vous souhaitez recevoir ci-dessous et nous mettrons à jour les paramètres.',
       'ar': 'اختر الإشعارات التي تريد تلقيها أدناه وسنقوم بتحديث الإعدادات.',
       'de':
           'Wählen Sie unten aus, welche Benachrichtigungen Sie erhalten möchten, und wir aktualisieren die Einstellungen.',
@@ -1395,14 +1379,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Elija qué notificaciones desea recibir a continuación y actualizaremos la configuración.',
     },
     'gjygkr0n': {
-      'en': 'Push Notifications',
+      'en': 'Notifications en temps réel',
       'ar': 'دفع الإخطارات',
       'de': 'Mitteilungen',
       'es': 'Notificaciones push',
     },
     '3y3yhxbk': {
       'en':
-          'Receive Push notifications from our application on a semi regular basis.',
+          'Recevoir des notifications push de notre application de manière semi-régulière.',
       'ar': 'تلقي إشعارات من تطبيقنا على أساس شبه منتظم.',
       'de':
           'Erhalten Sie regelmäßig Push-Benachrichtigungen von unserer Anwendung.',
@@ -1410,14 +1394,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Reciba notificaciones Push de nuestra aplicación de forma semi regular.',
     },
     '1ytebj35': {
-      'en': 'Email Notifications',
+      'en': 'Notifications par e-mail',
       'ar': 'اشعارات البريد الالكتروني',
       'de': 'E-Mail Benachrichtigungen',
       'es': 'Notificaciónes de Correo Electrónico',
     },
     '9lvh5nst': {
       'en':
-          'Receive email notifications from our marketing team about new features.',
+          'Recevoir des notifications par courriel de notre équipe de marketing concernant les nouvelles fonctionnalités.',
       'ar':
           'تلقي إشعارات البريد الإلكتروني من فريق التسويق لدينا حول الميزات الجديدة.',
       'de':
@@ -1425,24 +1409,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es':
           'Reciba notificaciones por correo electrónico de nuestro equipo de marketing sobre nuevas funciones.',
     },
-    '69d2j74u': {
-      'en': 'Location Services',
-      'ar': 'خدمات الموقع',
-      'de': 'Standortdienste',
-      'es': 'Servicios de localización',
-    },
-    '3k8cuv0d': {
-      'en':
-          'Allow us to track your location, this helps keep track of spending and keeps you safe.',
-      'ar':
-          'اسمح لنا بتتبع موقعك ، فهذا يساعد على تتبع الإنفاق ويحافظ على سلامتك.',
-      'de':
-          'Erlauben Sie uns, Ihren Standort zu verfolgen, dies hilft, die Ausgaben im Auge zu behalten und schützt Sie.',
-      'es':
-          'Permítanos rastrear su ubicación, esto ayuda a realizar un seguimiento de los gastos y lo mantiene seguro.',
-    },
     'isgrgbfs': {
-      'en': 'Save Changes',
+      'en': 'Modifier',
       'ar': 'حفظ التغييرات',
       'de': 'Änderungen speichern',
       'es': 'Guardar cambios',
@@ -1457,20 +1425,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // privacyPolicy
   {
     'alczfiiy': {
-      'en': 'Privacy Policy',
+      'en': 'Politique de confidentialité',
       'ar': 'سياسة الخصوصية',
       'de': 'Datenschutz-Bestimmungen',
       'es': 'Política de privacidad',
     },
     'fvsfg5on': {
-      'en': 'How we use your data',
+      'en': 'Comment utilisons-nous vos données ?',
       'ar': 'كيف نستخدم بياناتك',
       'de': 'Wie wir Ihre Daten verwenden',
       'es': 'Cómo usamos sus datos',
     },
     'nbiyrnzl': {
       'en':
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan sit amet nulla facilisi morbi tempus. Non consectetur a erat nam. Donec ultrices tincidunt arcu non sodales. Velit sed ullamcorper morbi tincidunt. Molestie a iaculis at erat pellentesque adipiscing. Mauris nunc congue nisi vitae. Nisl tincidunt eget nullam non nisi. Faucibus nisl tincidunt eget nullam non nisi est. Leo duis ut diam quam nulla.\n\nEuismod lacinia at quis risus sed vulputate odio. Velit dignissim sodales ut eu sem integer vitae justo eget. Risus feugiat in ante metus. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Suscipit tellus mauris a diam maecenas sed enim ut sem. Sem integer vitae justo eget magna fermentum iaculis eu. Lacinia at quis risus sed. Faucibus purus in massa tempor. Leo a diam sollicitudin tempor id eu. Nisi scelerisque eu ultrices vitae auctor. Vulputate dignissim suspendisse in est ante in. Enim neque volutpat ac tincidunt vitae semper quis. Ipsum dolor sit amet consectetur adipiscing elit.\n\nEt malesuada fames ac turpis egestas maecenas pharetra convallis. Sed sed risus pretium quam vulputate. Elit pellentesque habitant morbi tristique senectus et. Viverra maecenas accumsan lacus vel facilisis volutpat est. Sit amet mattis vulputate enim nulla. Nisi lacus sed viverra tellus in hac habitasse. Sit amet risus nullam eget felis eget nunc lobortis. Pretium lectus quam id leo in vitae. Adipiscing diam donec adipiscing tristique. Commodo sed egestas egestas fringilla. Ipsum dolor sit amet consectetur adipiscing. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Montes nascetur ridiculus mus mauris. Ut etiam sit amet nisl purus in. Arcu ac tortor dignissim convallis aenean et tortor at. Ornare suspendisse sed nisi lacus sed viverra.',
+          'Chez [Nom de l\'entreprise], nous accordons une grande importance à la protection de votre vie privée et à la sécurité de vos données. Nous recueillons certaines informations lorsque vous utilisez nos services pour améliorer votre expérience et fournir des fonctionnalités personnalisées. Voici comment nous utilisons vos données :\n\nFourniture de services : Nous utilisons vos données pour vous fournir les services que vous avez demandés, tels que la création de comptes, le traitement des paiements, la personnalisation de votre expérience utilisateur, et la fourniture de contenu pertinent.\n\nAmélioration des produits : Nous analysons les données collectées pour comprendre comment nos utilisateurs interagissent avec nos produits et services. Cela nous permet d\'identifier les domaines à améliorer et de développer de nouvelles fonctionnalités pour mieux répondre à vos besoins.\n\nCommunication avec vous : Nous utilisons vos coordonnées pour vous envoyer des notifications importantes concernant nos services, telles que les mises à jour du produit, les changements dans nos politiques ou les rappels de sécurité.\n\nMarketing et publicité : Nous pouvons utiliser vos données pour vous envoyer des communications marketing et des offres promotionnelles sur nos produits et services ou sur ceux de nos partenaires, si vous avez donné votre consentement pour le faire.\n\nSécurité et prévention de la fraude : Nous utilisons des mesures de sécurité pour protéger vos données contre tout accès non autorisé, ainsi que pour détecter et prévenir la fraude ou toute autre activité abusive.\n\nConformité aux lois et réglementations : Nous pouvons être tenus de partager vos données dans le cadre d\'une enquête légale ou réglementaire, ou pour nous conformer à une obligation légale.\n\nVotre confidentialité est notre priorité absolue, et nous nous engageons à utiliser vos données de manière responsable et transparente. Si vous avez des questions sur notre utilisation des données ou sur notre politique de confidentialité, n\'hésitez pas à nous contacter à tout moment.\n\n',
       'ar':
           'Lorem ipsum dolor sit amet، consectetur adipiscing elit، sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Accumsan sit amet nulla facilisi morbi tempus. غير consectetur a erat nam. دونك ألتريسيس تينسيدونت قوس غير مخادع. Velit sed ullamcorper morbi tincidunt. Molestie a iaculis في erat pellentesque adipiscing. موريس نونك كونيج سيرة ذاتية. Nisl tincidunt eget nullam non nisi. Faucibus nisl tincidunt eget nullam non nisi est. Leo duis ut diam quam nulla. Euismod lacinia في quis risus sed vulputate odio. فيليت كريمينسيم sodales ut eu sem سيرة ذاتية صحيحة justo eget. Risus feugiat في ما قبل ميتوس. Leo vel orci porta non pulvinar neque laoreet suspension interdum. Suscipit Tellus mauris a Diam Maecenas Sed enim ut sem. SEM السيرة الذاتية الصحيحة justo eget magna fermentum iaculis eu. لاسينيا في quis risus sed. Faucibus purus في ماسا مؤقت. ليو بقطر سوليتودين معرف مؤقت الاتحاد الأوروبي. Nisi scelerisque eu ultrices السيرة الذاتية موصل. Vulputate كريم معلق في وقت مبكر. Enim neque volutpat ac tincidunt vitae semper quis. Ipsum dolor sit amet consectetur adipiscing elit. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Sed sed risus Préium quam vulputate. Elit pellentesque موطن morbi tristique senectus et. Viverra maecenas accumsan lacus vel facilisis volutpat est. sit amet mattis vulputate enim nulla. Nisi lacus sed viverra Tellus في العادة السيئة. اجلس أميت ريسوس نولام إيجيت فيليس إيجيت نونك لوبورتيز. Pretium lectus quam id leo in vitae. Adipiscing Diam donec adipiscing tristique. كومودو سيد egestas egestas fringilla. Ipsum dolor sit amet consectetur adipiscing. Ipsum dolor sit amet consectetur adipiscing النخبة pellentesque المعيشية morbi. مونتيس ناسيتور ريديكولوس موس موريس. Ut etiam sit amet nisl purus in. Arcu ac Ornare suspendisse sed nisi lacus sed viverra.',
       'de':
@@ -1494,14 +1462,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Tutorial',
     },
     'o6prpb1q': {
-      'en': 'Create Budgets',
+      'en': 'Création de budgets',
       'ar': 'إنشاء الميزانيات',
       'de': 'Erstellen Sie Budgets',
       'es': 'Crear presupuestos',
     },
     '292pbdw7': {
       'en':
-          'Create budgets that you can tie transactions too in order for easy tracking.',
+          'Créez des budgets auxquels vous pouvez rattacher les transactions afin d\'en faciliter le suivi.',
       'ar':
           'قم بإنشاء ميزانيات يمكنك ربط المعاملات بها أيضًا من أجل التتبع السهل.',
       'de':
@@ -1510,14 +1478,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Cree presupuestos en los que también pueda vincular transacciones para facilitar el seguimiento.',
     },
     'b10xvuf9': {
-      'en': 'Keep Track of Spending',
+      'en': 'Suivi des dépenses',
       'ar': 'تتبع الإنفاق',
       'de': 'Behalten Sie die Ausgaben im Auge',
       'es': 'Mantenga un registro de los gastos',
     },
     't6k1smsm': {
       'en':
-          'Easily add transactions and associate them with budgets that have been created.',
+          'Ajoutez facilement des transactions et associez-les aux budgets qui ont été créés.',
       'ar': 'أضف المعاملات بسهولة وربطها بالميزانيات التي تم إنشاؤها.',
       'de':
           'Fügen Sie ganz einfach Transaktionen hinzu und verknüpfen Sie sie mit erstellten Budgets.',
@@ -1525,13 +1493,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Agregue fácilmente transacciones y asócielas con los presupuestos que se han creado.',
     },
     'u8xxj427': {
-      'en': 'Budget Analysis',
+      'en': 'Analyse du budget',
       'ar': 'تحليل الميزانية',
       'de': 'Budgetanalyse',
       'es': 'Análisis de presupuesto',
     },
     'iqi0pkmb': {
-      'en': 'Know where your budgets are and how they can be adjusted.',
+      'en':
+          'Sachez où en sont vos budgets et comment ils peuvent être ajustés.',
       'ar': 'تعرف على مكان ميزانياتك وكيف يمكن تعديلها.',
       'de': 'Wissen, wo Ihre Budgets sind und wie sie angepasst werden können.',
       'es': 'Sepa dónde están sus presupuestos y cómo se pueden ajustar.',
@@ -1546,22 +1515,28 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // homePage
   {
     'ucqlrrlk': {
-      'en': 'Welcome,',
+      'en': 'Bienvenue,',
       'ar': 'مرحبا،',
       'de': 'Herzlich willkommen,',
       'es': 'Bienvenidos,',
     },
     'c10wb3ot': {
-      'en': 'Your account Details are below.',
+      'en': 'Les détails de votre compte sont ci-dessous.',
       'ar': 'تفاصيل حسابك أدناه.',
       'de': 'Ihre Kontodetails sind unten.',
       'es': 'Los detalles de su cuenta se encuentran a continuación.',
     },
     '6z1sm34j': {
-      'en': 'Total Balance',
+      'en': 'Total du solde',
       'ar': 'إجمالي الرصيد',
       'de': 'Gesamtsaldo',
       'es': 'Balance total',
+    },
+    'c0dls4u5': {
+      'en': '\$',
+      'ar': '25202 دولار',
+      'de': '25.202 \$',
+      'es': '\$25,202',
     },
     '30yef7fj': {
       'en': 'Payroll Due',
@@ -1576,22 +1551,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$12,245',
     },
     '1cjqanzg': {
-      'en': 'Debit Date',
+      'en': 'Date',
       'ar': 'تاريخ الخصم',
       'de': 'Belastungsdatum',
       'es': 'Fecha de débito',
-    },
-    '726vrs60': {
-      'en': 'Aug 31, 2021',
-      'ar': '31 أغسطس 2021',
-      'de': '31. August 2021',
-      'es': '31 de agosto de 2021',
-    },
-    '4dgbx46t': {
-      'en': '4 Days Left',
-      'ar': 'باقي 4 ايام',
-      'de': 'noch 4 Tage',
-      'es': '4 días restantes',
     },
     'n87v5tth': {
       'en': 'Marketing Budget',
@@ -1606,7 +1569,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$4,000',
     },
     '7i0a44qa': {
-      'en': 'Total Spent',
+      'en': 'Total ',
       'ar': 'إجمال الصرف',
       'de': 'Gesamtausgaben',
       'es': 'Total gastado',
@@ -1617,56 +1580,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': '\$3.402',
       'es': '\$3,402',
     },
-    'n1o498d9': {
-      'en': '4 Days Left',
-      'ar': 'باقي 4 ايام',
-      'de': 'noch 4 Tage',
-      'es': '4 días restantes',
-    },
     'lmo3ko2i': {
-      'en': 'Quick Services',
+      'en': 'Services rapides',
       'ar': 'خدمات سريعة',
       'de': 'Schnelle Dienste',
       'es': 'Servicios rápidos',
     },
     '774itrkn': {
-      'en': 'My Bank',
+      'en': 'Ma banque',
       'ar': 'بنكي',
       'de': 'Meine Bank',
       'es': 'Mi banco',
     },
     'xs2as0vf': {
-      'en': 'Transfer',
+      'en': 'Cours Bitcoin',
       'ar': 'تحويل',
       'de': 'Transfer',
       'es': 'Transferir',
     },
     'g8yaaa7f': {
-      'en': 'Activity',
+      'en': 'Activités',
       'ar': 'نشاط',
       'de': 'Aktivität',
       'es': 'Actividad',
     },
     'nb29ps2o': {
-      'en': '1 New Alert',
+      'en': '1 Nouveau alerte',
       'ar': '1 تنبيه جديد',
       'de': '1 Neue Benachrichtigung',
       'es': '1 nueva alerta',
     },
     'vgt9s153': {
-      'en': 'View Now',
+      'en': 'Voir',
       'ar': 'عرض الآن',
       'de': 'Jetzt ansehen',
       'es': 'Ver ahora',
-    },
-    'pnvkw3b7': {
-      'en':
-          'We noticed a small charge that is out of character of this account, please review.',
-      'ar': 'لقد لاحظنا تكلفة صغيرة خارجة عن طبيعة هذا الحساب ، يرجى المراجعة.',
-      'de':
-          'Wir haben eine kleine Belastung festgestellt, die für dieses Konto untypisch ist. Bitte überprüfen Sie diese.',
-      'es':
-          'Notamos un pequeño cargo que está fuera de lugar en esta cuenta, revíselo.',
     },
     'c805m53i': {
       'en': 'Acceuil',
@@ -1675,362 +1623,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Casa',
     },
   },
-  // homePage_alt
-  {
-    'xdh0z8qh': {
-      'en': 'Welcome,',
-      'ar': 'مرحبا،',
-      'de': 'Herzlich willkommen,',
-      'es': 'Bienvenidos,',
-    },
-    'rzpg3cvh': {
-      'en': 'Your latest updates are below.',
-      'ar': 'آخر التحديثات الخاصة بك أدناه.',
-      'de': 'Ihre neuesten Updates sind unten.',
-      'es': 'Sus últimas actualizaciones se encuentran a continuación.',
-    },
-    'flto6ti8': {
-      'en': 'Total Balance',
-      'ar': 'إجمالي الرصيد',
-      'de': 'Gesamtsaldo',
-      'es': 'Balance total',
-    },
-    'g07h0azf': {
-      'en': '\$25,281',
-      'ar': '25281 دولارًا',
-      'de': '25.281 \$',
-      'es': '\$25,281',
-    },
-    'v9ghmn0y': {
-      'en': 'Total Balance',
-      'ar': 'إجمالي الرصيد',
-      'de': 'Gesamtsaldo',
-      'es': 'Balance total',
-    },
-    '7vf40ybo': {
-      'en': '\$25,281',
-      'ar': '25281 دولارًا',
-      'de': '25.281 \$',
-      'es': '\$25,281',
-    },
-    'k4scs2cu': {
-      'en': 'Total Balance',
-      'ar': 'إجمالي الرصيد',
-      'de': 'Gesamtsaldo',
-      'es': 'Balance total',
-    },
-    'cvrbfozm': {
-      'en': '\$25,281',
-      'ar': '25281 دولارًا',
-      'de': '25.281 \$',
-      'es': '\$25,281',
-    },
-    'a33ldz0h': {
-      'en': 'Next Payroll',
-      'ar': 'كشوف المرتبات التالية',
-      'de': 'Nächste Gehaltsabrechnung',
-      'es': 'Nómina siguiente',
-    },
-    '3dgzzz79': {
-      'en': '\$25,281',
-      'ar': '25281 دولارًا',
-      'de': '25.281 \$',
-      'es': '\$25,281',
-    },
-    'hp28r17l': {
-      'en': 'Debit Date',
-      'ar': 'تاريخ الخصم',
-      'de': 'Belastungsdatum',
-      'es': 'Fecha de débito',
-    },
-    'k04gl6sz': {
-      'en': 'Aug 31, 2021',
-      'ar': '31 أغسطس 2021',
-      'de': '31. August 2021',
-      'es': '31 de agosto de 2021',
-    },
-    'd5tcdo3w': {
-      'en': '4 days left',
-      'ar': 'باقي 4 ايام',
-      'de': 'noch 4 Tage',
-      'es': '4 días restantes',
-    },
-    '8wofym4i': {
-      'en': '1 New Alert',
-      'ar': '1 تنبيه جديد',
-      'de': '1 Neue Benachrichtigung',
-      'es': '1 nueva alerta',
-    },
-    'kaq4nzj6': {
-      'en': 'Fraud Alert',
-      'ar': 'تنبيه الاحتيال',
-      'de': 'Betrugsalarm',
-      'es': 'Alerta de fraude',
-    },
-    '7zcrtqx6': {
-      'en':
-          'We noticed a small charge that is out of character of this account, please review.',
-      'ar': 'لقد لاحظنا تكلفة صغيرة خارجة عن طبيعة هذا الحساب ، يرجى المراجعة.',
-      'de':
-          'Wir haben eine kleine Belastung festgestellt, die für dieses Konto untypisch ist. Bitte überprüfen Sie diese.',
-      'es':
-          'Notamos un pequeño cargo que está fuera de lugar en esta cuenta, revíselo.',
-    },
-    '23yxoc9m': {
-      'en': 'View Now',
-      'ar': 'عرض الآن',
-      'de': 'Jetzt ansehen',
-      'es': 'Ver ahora',
-    },
-    'a86mwddx': {
-      'en': 'Marketing Budget',
-      'ar': 'ميزانية التسويق',
-      'de': 'Werbehaushalt, Werbebudget',
-      'es': 'Presupuesto de marketing',
-    },
-    '6c2o39hz': {
-      'en': '\$3,000',
-      'ar': '3000 دولار',
-      'de': '3.000 \$',
-      'es': '\$3,000',
-    },
-    '5subrra4': {
-      'en': 'Total Spent',
-      'ar': 'إجمال الصرف',
-      'de': 'Gesamtausgaben',
-      'es': 'Total gastado',
-    },
-    '0wtm2m51': {
-      'en': '\$2,502',
-      'ar': '2،502 دولار',
-      'de': '2.502 \$',
-      'es': '\$2,502',
-    },
-    'bp9d56pc': {
-      'en': '4 days left',
-      'ar': 'باقي 4 ايام',
-      'de': 'noch 4 Tage',
-      'es': '4 días restantes',
-    },
-    'b8oj0pck': {
-      'en': 'Team Name',
-      'ar': 'اسم الفريق',
-      'de': 'Teamname',
-      'es': 'Nombre del equipo',
-    },
-    '87ospwsq': {
-      'en': '\$5,000',
-      'ar': '5000 دولار',
-      'de': '5.000 \$',
-      'es': '\$5,000',
-    },
-    'jzfejglt': {
-      'en': 'Head of Design',
-      'ar': 'رئيس قسم التصميم',
-      'de': 'Leiter Design',
-      'es': 'Jefe de Diseño',
-    },
-    'zm0lhm2a': {
-      'en': '[Time Stamp]',
-      'ar': '[الطابع الزمني]',
-      'de': '[Zeitstempel]',
-      'es': '[Marca de tiempo]',
-    },
-    '8hu2v2im': {
-      'en': '•',
-      'ar': '•',
-      'de': '•',
-      'es': '•',
-    },
-  },
-  // homePage_alt_1
-  {
-    '51kawpgz': {
-      'en': 'Welcome,',
-      'ar': 'مرحبا،',
-      'de': 'Herzlich willkommen,',
-      'es': 'Bienvenidos,',
-    },
-    'izgc0c6r': {
-      'en': 'Andrew',
-      'ar': 'أندرو',
-      'de': 'Andreas',
-      'es': 'Andrés',
-    },
-    '30kx6e5v': {
-      'en': 'Your latest updates are below.',
-      'ar': 'آخر التحديثات الخاصة بك أدناه.',
-      'de': 'Ihre neuesten Updates sind unten.',
-      'es': 'Sus últimas actualizaciones se encuentran a continuación.',
-    },
-    'wknu2tm4': {
-      'en': 'Balance',
-      'ar': 'الرصيد',
-      'de': 'Gleichgewicht',
-      'es': 'Equilibrio',
-    },
-    'syy689nt': {
-      'en': '\$7,630',
-      'ar': '7630 دولارًا',
-      'de': '\$7.630',
-      'es': '\$7,630',
-    },
-    'hhyb9x4x': {
-      'en': '**** 0149',
-      'ar': '**** 0149',
-      'de': '**** 0149',
-      'es': '**** 0149',
-    },
-    'kg2tmby7': {
-      'en': '05/25',
-      'ar': '05/25',
-      'de': '25.05',
-      'es': '25/05',
-    },
-    'y7zomzzp': {
-      'en': 'Quick Service',
-      'ar': 'خدمة سريعة',
-      'de': 'Schneller Service',
-      'es': 'Servicio rapido',
-    },
-    'rfozud9v': {
-      'en': 'Transfer',
-      'ar': 'تحويل',
-      'de': 'Transfer',
-      'es': 'Transferir',
-    },
-    'pcrarg0a': {
-      'en': 'Activity',
-      'ar': 'نشاط',
-      'de': 'Aktivität',
-      'es': 'Actividad',
-    },
-    'zmjsfzgg': {
-      'en': 'My Bank',
-      'ar': 'بنكي',
-      'de': 'Meine Bank',
-      'es': 'Mi banco',
-    },
-    'dfjtbkbo': {
-      'en': 'Transaction',
-      'ar': 'عملية',
-      'de': 'Transaktion',
-      'es': 'Transacción',
-    },
-    'g7t9krj7': {
-      'en': 'Go Far Rewards',
-      'ar': 'احصل على مكافآت بعيدة',
-      'de': 'Go-Far-Prämien',
-      'es': 'Recompensas Ve Lejos',
-    },
-    'vupu5y5p': {
-      'en': 'Income',
-      'ar': 'دخل',
-      'de': 'Einkommen',
-      'es': 'Ingreso',
-    },
-    'bj5qnrj5': {
-      'en': '\$50.00',
-      'ar': '50.00 دولارًا أمريكيًا',
-      'de': '\$50,00',
-      'es': '\$50.00',
-    },
-    'd1n5mbq7': {
-      'en': 'Hello World',
-      'ar': 'مرحبا بالعالم',
-      'de': 'Hallo Welt',
-      'es': 'Hola Mundo',
-    },
-    '2thn73jc': {
-      'en': 'Go Far Rewards',
-      'ar': 'احصل على مكافآت بعيدة',
-      'de': 'Go-Far-Prämien',
-      'es': 'Recompensas Ve Lejos',
-    },
-    '1fjdiibo': {
-      'en': 'Income',
-      'ar': 'دخل',
-      'de': 'Einkommen',
-      'es': 'Ingreso',
-    },
-    'ld7s2fpn': {
-      'en': '\$50.00',
-      'ar': '50.00 دولارًا أمريكيًا',
-      'de': '\$50,00',
-      'es': '\$50.00',
-    },
-    'ft8bu1we': {
-      'en': 'Hello World',
-      'ar': 'مرحبا بالعالم',
-      'de': 'Hallo Welt',
-      'es': 'Hola Mundo',
-    },
-    '8t6ddwco': {
-      'en': 'Go Far Rewards',
-      'ar': 'احصل على مكافآت بعيدة',
-      'de': 'Go-Far-Prämien',
-      'es': 'Recompensas Ve Lejos',
-    },
-    'td15kjsa': {
-      'en': 'Income',
-      'ar': 'دخل',
-      'de': 'Einkommen',
-      'es': 'Ingreso',
-    },
-    'qmjqp9a6': {
-      'en': '\$50.00',
-      'ar': '50.00 دولارًا أمريكيًا',
-      'de': '\$50,00',
-      'es': '\$50.00',
-    },
-    '9qc797et': {
-      'en': 'Hello World',
-      'ar': 'مرحبا بالعالم',
-      'de': 'Hallo Welt',
-      'es': 'Hola Mundo',
-    },
-    '8pdmehj2': {
-      'en': 'Go Far Rewards',
-      'ar': 'احصل على مكافآت بعيدة',
-      'de': 'Go-Far-Prämien',
-      'es': 'Recompensas Ve Lejos',
-    },
-    'krrhjgc4': {
-      'en': 'Income',
-      'ar': 'دخل',
-      'de': 'Einkommen',
-      'es': 'Ingreso',
-    },
-    '53m2u0s2': {
-      'en': '\$50.00',
-      'ar': '50.00 دولارًا أمريكيًا',
-      'de': '\$50,00',
-      'es': '\$50.00',
-    },
-    'aks5zz4f': {
-      'en': 'Hello World',
-      'ar': 'مرحبا بالعالم',
-      'de': 'Hallo Welt',
-      'es': 'Hola Mundo',
-    },
-    'f3hxl69y': {
-      'en': 'Home',
-      'ar': 'مسكن',
-      'de': 'Heim',
-      'es': 'Casa',
-    },
-  },
   // budget_DELETE
   {
     'pozov0xz': {
-      'en': 'Delete Budget',
+      'en': 'Supprimer Budget',
       'ar': 'حذف الميزانية',
       'de': 'Budget löschen',
       'es': 'Eliminar presupuesto',
     },
     'aptjmof0': {
       'en':
-          'If you delete this budget, your transactions will no longer be associated with it.',
+          'Si vous supprimez ce budget, vos transactions n\'y seront plus associées.',
       'ar': 'إذا حذفت هذه الميزانية ، فلن تكون معاملاتك مرتبطة بها بعد الآن.',
       'de':
           'Wenn Sie dieses Budget löschen, sind Ihre Transaktionen nicht mehr damit verknüpft.',
@@ -2038,7 +1641,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Si elimina este presupuesto, sus transacciones ya no estarán asociadas a él.',
     },
     '9l7pbjcj': {
-      'en': 'Delete Budget',
+      'en': 'Supprimer Budget',
       'ar': 'حذف الميزانية',
       'de': 'Budget löschen',
       'es': 'Eliminar presupuesto',
@@ -2058,38 +1661,32 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // profilepage
   {
-    'hhb6veym': {
-      'en': 'Wallet Balance',
-      'ar': 'رصيد المحفظة',
-      'de': 'Wallet-Guthaben',
-      'es': 'Saldo de la cartera',
-    },
     'fgf8icmv': {
-      'en': '\$23,000',
+      'en': '\$',
       'ar': '23000 دولار',
       'de': '23.000 \$',
       'es': '\$23,000',
     },
     '2rrr446m': {
-      'en': '3 currencies',
+      'en': '3 devises',
       'ar': '3 عملات',
       'de': '3 Währungen',
       'es': '3 monedas',
     },
     'r04m9nxs': {
-      'en': 'My Bank',
+      'en': 'Ma Banque',
       'ar': 'بنكي',
       'de': 'Meine Bank',
       'es': 'Mi banco',
     },
     '8nac51xz': {
-      'en': 'Transfer',
+      'en': 'Cours Bitcoin',
       'ar': 'تحويل',
       'de': 'Transfer',
       'es': 'Transferir',
     },
     's56t3xya': {
-      'en': 'Activity',
+      'en': 'Activités',
       'ar': 'نشاط',
       'de': 'Aktivität',
       'es': 'Actividad',
@@ -2107,7 +1704,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$7,302',
     },
     'yla7uncg': {
-      'en': '32% of portfolio',
+      'en': '32% ',
       'ar': '32٪ من المحفظة',
       'de': '32 % des Portfolios',
       'es': '32% de la cartera',
@@ -2131,7 +1728,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$7,302',
     },
     '606emxw1': {
-      'en': '40% of portfolio',
+      'en': '40% ',
       'ar': '40٪ من المحفظة',
       'de': '40 % des Portfolios',
       'es': '40% de la cartera',
@@ -2155,7 +1752,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$7,302',
     },
     '4mvfe3pe': {
-      'en': '40% of portfolio',
+      'en': '50%',
       'ar': '40٪ من المحفظة',
       'de': '40 % des Portfolios',
       'es': '40% de la cartera',
@@ -2166,11 +1763,615 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': '',
       'es': '',
     },
+    'jajnfhsz': {
+      'en': 'Solde du portefeuille',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
     'vox9t1s0': {
       'en': 'Home',
       'ar': 'مسكن',
       'de': 'Heim',
       'es': 'Casa',
+    },
+  },
+  // Historique
+  {
+    '2upqxx8m': {
+      'en': 'Historique des prix',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'g552jz68': {
+      'en':
+          'Sélectionnez une période pour afficher le graphique de l\'historique des prix.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    't65264mi': {
+      'en': '1W',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'y9wtl0hb': {
+      'en': '1M',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'v6262dkr': {
+      'en': '3M',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '6zcs9hx8': {
+      'en': '1Y',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'lgzox736': {
+      'en': 'ALL',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '61ev4e2g': {
+      'en': 'Graphique',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'h1j1lhlm': {
+      'en': 'Transactions récentes',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '0t0oh4cl': {
+      'en': 'Présentation du budget',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // BitcoinPrice
+  {
+    '0iip5de2': {
+      'en': 'Le prix actuel du bitcoin n\'est pas disponible pour le moment.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'me39i3pu': {
+      'en': 'Actualiser',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ml7kkj9e': {
+      'en': 'Cours du bitcoin',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '994zen92': {
+      'en': 'BitCoin',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // NewsCrypto
+  {
+    'w23z925m': {
+      'en': 'Actualités ',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'u7hls9cd': {
+      'en': 'Dernières mises à jour',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'x3n3uuib': {
+      'en': 'Plus d\'informations',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'l7evlzpd': {
+      'en': 'Nouvelles sur les crypto-monnaies',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '1ximboog': {
+      'en': 'Acceuil',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // PortefeuilleBitcoin
+  {
+    '8ckdls7f': {
+      'en': 'Total Balance',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'hqsjm3ss': {
+      'en': ' BTC',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '2j4te0tl': {
+      'en': 'Envoyer',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'i5280nbt': {
+      'en': 'Recevoir',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'e5n4nkrm': {
+      'en': 'Transactions récentes',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '3bt48lnn': {
+      'en': 'Envoi de bitcoins',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'pb8yinjr': {
+      'en': 'A :1BoatSLRHtKNngkdXEeobR76b53LETtpyT',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    't2hf10mr': {
+      'en': '-0.001 BTC',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'akvs7g3v': {
+      'en': 'Bitcoin Wallet',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'bfzlhhlg': {
+      'en': '',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // AchatsBitcoin
+  {
+    '51ehbtdz': {
+      'en': 'Montant en USD',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ahw9u4zz': {
+      'en': 'Entrez le montant en USD...',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'hl04m8gf': {
+      'en': 'Adresse Bitcoin',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'zarg604d': {
+      'en': 'Entrez votre adresse Bitcoin...',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '0h31ywn7': {
+      'en': 'Acheter',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'yji8uiv0': {
+      'en': 'Achat de Bitcoins',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // VendreBitcoin
+  {
+    '1useywrd': {
+      'en': 'Saisissez le montant de bitcoins que vous souhaitez vendre.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '75oue0g1': {
+      'en': 'Montant en BTC',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '4fz7hsf8': {
+      'en': 'Saisir le montant...',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '38zcdv1x': {
+      'en': 'Prix par BTC (USD)',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'w3p7plwc': {
+      'en': 'Saisir le prix...',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'qthx7lkt': {
+      'en': 'Total (USD)',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'z7mbe2g7': {
+      'en': 'Calculated total...',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'dxdh6tbm': {
+      'en': 'Vendez maintenant',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'yz9ysoe3': {
+      'en': 'Vendre des bitcoins',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // PayementBitcoin
+  {
+    '4zitmkwd': {
+      'en':
+          'Choisissez votre méthode préférée pour une expérience de transaction transparente.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'f176ecy6': {
+      'en': 'Credit/Debit Card',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'nfidtoik': {
+      'en': 'PayPal',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'wuqxk91b': {
+      'en': 'Bank Transfer',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'moo3ogdm': {
+      'en': 'Cryptocurrency',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'dt2h005l': {
+      'en': 'Taux de change',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'mjpgt3cf': {
+      'en':
+          'Obtenez les derniers taux de change pour des conversions précises.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'z3j4khq0': {
+      'en': 'USD to EUR',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '313lw592': {
+      'en': '0.92',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'as2o66wa': {
+      'en': 'USD to GBP',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'vf0i0pzj': {
+      'en': '0.76',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '9ud3qx11': {
+      'en': 'USD to CAD',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '00lwsj18': {
+      'en': '1.28',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'rinimrgh': {
+      'en': 'USD to AUD',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '7dffiub3': {
+      'en': '1.35',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'dwraqepx': {
+      'en': 'Instructions',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'y36ydsjm': {
+      'en': '1. Sélectionnez votre méthode de paiement',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    't3prcbws': {
+      'en': '2. Saisissez le montant de la transaction.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'lbz19adq': {
+      'en': '3. Confirmez les détails et continuez.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'st7oc3x0': {
+      'en': '4. Recevez une confirmation de la transaction effectuée.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'as4t2ij3': {
+      'en': 'Acceuil',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'qxvz1pd1': {
+      'en': 'Modes de paiement',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // AlertePrix
+  {
+    'nbutloqp': {
+      'en': 'Alertes aux prix',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'nfj30ce5': {
+      'en':
+          'Créez des alertes pour être informé lorsque le cours du bitcoin atteint un certain seuil.',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'bmg7ph4c': {
+      'en': 'Nom de l\'alerte',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ooiv1oze': {
+      'en': 'Saisir un nom pour votre alerte',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '1853culx': {
+      'en': 'Fixer le seuil de prix',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '1v18lb5g': {
+      'en': 'Entrez le prix',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'j6xs6ae7': {
+      'en': 'Monnaie',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'sy7saojx': {
+      'en': 'USD',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'juoqge44': {
+      'en': 'Définir une alerte',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'sr11jn0f': {
+      'en': 'Vos alertes',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'a233ost0': {
+      'en': 'Alerte Bitcoin',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'h2dq94w6': {
+      'en': '\$40,000',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ivqud6l5': {
+      'en': 'Alerte Ethereum',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'jog02ao5': {
+      'en': '\$2,500',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '65gk96vj': {
+      'en': 'Alerte Litecoin',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '08ax2nln': {
+      'en': '\$150',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ktda42mo': {
+      'en': 'Alerte Ripple ',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'w416isek': {
+      'en': '\$100',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // AjoutActualite
+  {
+    'vmex64qk': {
+      'en': 'Titre',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '9oev7gwn': {
+      'en': 'Saisir le titre de l\'actualité',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'nez4hmkd': {
+      'en': 'Description',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'pzuj3w74': {
+      'en': 'Saisir le contenu ici...',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '3p8jhy4f': {
+      'en': 'Télécharger une Photo',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'ml8akupn': {
+      'en': 'Ajouter',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'i39bg6s7': {
+      'en': 'Ajouter une actualité',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // Detailsactualite
+  {
+    'jex4zhw5': {
+      'en': 'Date : ',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '66k8ft0u': {
+      'en': 'Détail d\'une actualité',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '2f2qnzvx': {
+      'en': 'Home',
+      'ar': '',
+      'de': '',
+      'es': '',
     },
   },
   // bookAppointment

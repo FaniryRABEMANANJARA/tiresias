@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -92,7 +93,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: Color(0xFF191970),
       body: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -114,7 +115,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: MediaQuery.sizeOf(context).height * 0.8,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  color: Color(0xFF191970),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(16.0),
                     bottomRight: Radius.circular(16.0),
@@ -134,12 +135,13 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                         children: [
                           Text(
                             FFLocalizations.of(context).getText(
-                              'smbfunwu' /* Create Budget */,
+                              'smbfunwu' /* Création du budget */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  fontSize: 30.0,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -167,88 +169,77 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                           ),
                         ],
                       ),
-                      Container(
-                        width: MediaQuery.sizeOf(context).width * 0.8,
-                        height: 100.0,
-                        constraints: BoxConstraints(
-                          maxWidth: MediaQuery.sizeOf(context).width * 0.8,
-                        ),
-                        decoration: BoxDecoration(),
-                        child: TextFormField(
-                          controller: _model.textController1,
-                          focusNode: _model.textFieldFocusNode1,
-                          obscureText: false,
-                          decoration: InputDecoration(
-                            labelStyle: FlutterFlowTheme.of(context)
-                                .displaySmall
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w300,
-                                ),
-                            hintText: FFLocalizations.of(context).getText(
-                              'fcgw57wj' /* Amount */,
-                            ),
-                            hintStyle: FlutterFlowTheme.of(context)
-                                .displaySmall
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w300,
-                                ),
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).alternate,
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                            focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                            errorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                            focusedErrorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Color(0x00000000),
-                                width: 2.0,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 24.0, 24.0, 24.0),
-                            prefixIcon: Icon(
-                              Icons.attach_money_rounded,
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              size: 32.0,
-                            ),
-                          ),
-                          style: FlutterFlowTheme.of(context)
+                      TextFormField(
+                        controller: _model.textController1,
+                        focusNode: _model.textFieldFocusNode1,
+                        obscureText: false,
+                        decoration: InputDecoration(
+                          labelStyle: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
                                 fontFamily: 'Readex Pro',
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
+                                fontWeight: FontWeight.w300,
                               ),
-                          textAlign: TextAlign.center,
-                          keyboardType: TextInputType.number,
-                          validator: _model.textController1Validator
-                              .asValidator(context),
-                        ).animateOnPageLoad(
-                            animationsMap['textFieldOnPageLoadAnimation']!),
-                      ),
+                          hintText: FFLocalizations.of(context).getText(
+                            'fcgw57wj' /* Montant */,
+                          ),
+                          hintStyle: FlutterFlowTheme.of(context)
+                              .displaySmall
+                              .override(
+                                fontFamily: 'Readex Pro',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.w300,
+                              ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedErrorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Color(0x00000000),
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          contentPadding: EdgeInsetsDirectional.fromSTEB(
+                              20.0, 24.0, 24.0, 24.0),
+                          prefixIcon: Icon(
+                            Icons.attach_money_rounded,
+                            color: FlutterFlowTheme.of(context).primaryText,
+                            size: 32.0,
+                          ),
+                        ),
+                        style:
+                            FlutterFlowTheme.of(context).displaySmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  letterSpacing: 0.0,
+                                ),
+                        textAlign: TextAlign.center,
+                        keyboardType: TextInputType.number,
+                        validator: _model.textController1Validator
+                            .asValidator(context),
+                      ).animateOnPageLoad(
+                          animationsMap['textFieldOnPageLoadAnimation']!),
                       Padding(
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
@@ -258,7 +249,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'onjddqdc' /* Budget Name */,
+                              'onjddqdc' /* Nom du budget */,
                             ),
                             labelStyle: FlutterFlowTheme.of(context)
                                 .titleMedium
@@ -341,28 +332,29 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                 ),
-                            enabledBorder: UnderlineInputBorder(
+                            enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).alternate,
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
-                            focusedBorder: UnderlineInputBorder(
+                            focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
-                            errorBorder: UnderlineInputBorder(
+                            errorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
-                            focusedErrorBorder: UnderlineInputBorder(
+                            focusedErrorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
@@ -441,7 +433,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                     budgetCreated: getCurrentTimestamp,
                                     budgetDescription:
                                         _model.textController3.text,
-                                    budgetTime: '29 days left',
+                                    budgetTime: '29 jours restants',
                                     userBudgets:
                                         buttonBudgetListRecord?.budgetUser,
                                     budgetAmountNumber: int.tryParse(
@@ -456,10 +448,11 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                   },
                                 ),
                               });
-                              context.pop();
+
+                              context.pushNamed('homePage');
                             },
                             text: FFLocalizations.of(context).getText(
-                              '0iex13x2' /* Create Budget */,
+                              '0iex13x2' /* Établir un budget */,
                             ),
                             options: FFButtonOptions(
                               width: 300.0,
@@ -468,7 +461,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                   0.0, 0.0, 0.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).tertiary,
+                              color: Color(0xFF191970),
                               textStyle: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
@@ -495,11 +488,11 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
             ),
             Text(
               FFLocalizations.of(context).getText(
-                'jy5q09h1' /* Tap above to complete request */,
+                'jy5q09h1' /* Tapez ci-dessus pour compléter... */,
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Inter',
-                    color: Color(0x43000000),
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
                     letterSpacing: 0.0,
                   ),
             ),

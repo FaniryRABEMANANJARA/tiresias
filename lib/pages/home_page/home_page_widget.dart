@@ -46,7 +46,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFF191970),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -70,7 +70,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             : null;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFF191970),
           body: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -124,12 +124,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'ucqlrrlk' /* Welcome, */,
+                                        'ucqlrrlk' /* Bienvenue, */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineSmall
                                           .override(
                                             fontFamily: 'Readex Pro',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
                                             fontSize: 18.0,
                                             letterSpacing: 0.0,
                                           ),
@@ -157,12 +159,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'c10wb3ot' /* Your account Details are below... */,
+                                    'c10wb3ot' /* Les détails de votre compte so... */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Inter',
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                        fontSize: 12.0,
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -180,12 +185,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         children: [
                           Text(
                             FFLocalizations.of(context).getText(
-                              '6z1sm34j' /* Total Balance */,
+                              '6z1sm34j' /* Total du solde */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Inter',
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -199,6 +206,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
+                            FFLocalizations.of(context).getText(
+                              'c0dls4u5' /* $ */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .displaySmall
+                                .override(
+                                  fontFamily: 'Readex Pro',
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  fontSize: 32.0,
+                                  letterSpacing: 0.0,
+                                ),
+                          ),
+                          Text(
                             valueOrDefault<String>(
                               homePageBudgetsRecord?.budgetAmount,
                               '\$',
@@ -207,6 +227,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 .displaySmall
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  color: FlutterFlowTheme.of(context).primary,
                                   fontSize: 32.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -226,7 +247,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).tertiary,
+                        color: FlutterFlowTheme.of(context).secondary,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
@@ -263,7 +284,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '1cjqanzg' /* Debit Date */,
+                                  '1cjqanzg' /* Date */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Lexend Deca',
@@ -276,13 +297,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
-                                FFLocalizations.of(context).getText(
-                                  '726vrs60' /* Aug 31, 2021 */,
+                                valueOrDefault<String>(
+                                  homePageBudgetsRecord?.budgetTime,
+                                  'time',
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      fontSize: 20.0,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -291,8 +314,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
-                                FFLocalizations.of(context).getText(
-                                  '4dgbx46t' /* 4 Days Left */,
+                                valueOrDefault<String>(
+                                  homePageBudgetsRecord?.budgetTime,
+                                  'budget',
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Lexend Deca',
@@ -309,7 +333,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primary,
+                        color: FlutterFlowTheme.of(context).tertiary,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
@@ -346,7 +370,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '7i0a44qa' /* Total Spent */,
+                                  '7i0a44qa' /* Total  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Lexend Deca',
@@ -374,8 +398,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'n1o498d9' /* 4 Days Left */,
+                                valueOrDefault<String>(
+                                  homePageBudgetsRecord?.budgetTime,
+                                  'budget',
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Lexend Deca',
@@ -423,7 +448,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'lmo3ko2i' /* Quick Services */,
+                                  'lmo3ko2i' /* Services rapides */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -441,67 +466,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                width: MediaQuery.sizeOf(context).width * 0.24,
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsets.all(12.0),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 12.0),
-                                        child: Icon(
-                                          Icons.account_balance_outlined,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          size: 36.0,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 4.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            '774itrkn' /* My Bank */,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                          style: GoogleFonts.getFont(
-                                            'Lexend Deca',
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                            fontSize: 12.0,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
                               InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.pushNamed(
-                                    'transferFunds',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                        duration: Duration(milliseconds: 220),
-                                      ),
-                                    },
-                                  );
+                                  context.pushNamed('PortefeuilleBitcoin');
                                 },
                                 child: Container(
                                   width:
@@ -525,7 +496,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 12.0),
                                           child: Icon(
-                                            Icons.swap_horiz_outlined,
+                                            Icons.account_balance_outlined,
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             size: 36.0,
@@ -537,7 +508,66 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'xs2as0vf' /* Transfer */,
+                                              '774itrkn' /* Ma banque */,
+                                            ),
+                                            textAlign: TextAlign.center,
+                                            style: GoogleFonts.getFont(
+                                              'Lexend Deca',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              fontSize: 12.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed('BitcoinPrice');
+                                },
+                                child: Container(
+                                  width:
+                                      MediaQuery.sizeOf(context).width * 0.264,
+                                  decoration: BoxDecoration(
+                                    color:
+                                        FlutterFlowTheme.of(context).alternate,
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsets.all(12.0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 12.0),
+                                          child: Icon(
+                                            Icons.line_axis,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            size: 36.0,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 4.0, 0.0, 0.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'xs2as0vf' /* Cours Bitcoin */,
                                             ),
                                             style: GoogleFonts.getFont(
                                               'Lexend Deca',
@@ -559,7 +589,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.goNamed('MY_Card');
+                                  context.goNamed('Historique');
                                 },
                                 child: Container(
                                   width:
@@ -595,7 +625,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'g8yaaa7f' /* Activity */,
+                                              'g8yaaa7f' /* Activités */,
                                             ),
                                             style: GoogleFonts.getFont(
                                               'Lexend Deca',
@@ -626,13 +656,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      width: MediaQuery.sizeOf(context).width * 0.92,
+                      width: MediaQuery.sizeOf(context).width * 0.91,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondary,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -641,59 +671,79 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 4.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 8.0, 0.0),
-                                    child: Icon(
-                                      Icons.notifications_sharp,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      size: 24.0,
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'nb29ps2o' /* 1 New Alert */,
+                              child: InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed('NewsCrypto');
+                                },
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 8.0, 0.0),
+                                      child: Icon(
+                                        Icons.notifications_sharp,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 24.0,
                                       ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Inter',
-                                            letterSpacing: 0.0,
-                                          ),
                                     ),
-                                  ),
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'vgt9s153' /* View Now */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .override(
-                                          fontFamily: 'Inter',
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          letterSpacing: 0.0,
+                                    Expanded(
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'nb29ps2o' /* 1 Nouveau alerte */,
                                         ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 4.0, 0.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'pnvkw3b7' /* We noticed a small charge that... */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Lexend Deca',
-                                  color: Color(0xB4FFFFFF),
-                                  fontSize: 12.0,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              letterSpacing: 0.0,
+                                            ),
+                                      ),
+                                    ),
+                                    FFButtonWidget(
+                                      onPressed: () async {
+                                        context.pushNamed('NewsCrypto');
+                                      },
+                                      text: FFLocalizations.of(context).getText(
+                                        'vgt9s153' /* Voir */,
+                                      ),
+                                      icon: Icon(
+                                        Icons.remove_red_eye,
+                                        size: 15.0,
+                                      ),
+                                      options: FFButtonOptions(
+                                        height: 40.0,
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            24.0, 0.0, 24.0, 0.0),
+                                        iconPadding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              letterSpacing: 0.0,
+                                            ),
+                                        elevation: 3.0,
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),

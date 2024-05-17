@@ -60,7 +60,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            backgroundColor: Color(0xFF191970),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -77,9 +77,9 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
         final editProfileUsersRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+          backgroundColor: Color(0xFF191970),
           appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            backgroundColor: Color(0xFF191970),
             automaticallyImplyLeading: false,
             leading: InkWell(
               splashColor: Colors.transparent,
@@ -97,7 +97,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
             ),
             title: Text(
               FFLocalizations.of(context).getText(
-                '4rzqov3y' /* Edit Profile */,
+                '4rzqov3y' /* Modification Profile */,
               ),
               style: FlutterFlowTheme.of(context).headlineSmall.override(
                     fontFamily: 'Readex Pro',
@@ -127,10 +127,10 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                     width: 90.0,
                     height: 90.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF191970),
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: FlutterFlowTheme.of(context).secondaryText,
+                        color: FlutterFlowTheme.of(context).primaryText,
                       ),
                     ),
                     child: Container(
@@ -210,7 +210,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         }
                       },
                       text: FFLocalizations.of(context).getText(
-                        'zoxan2gi' /* Change Photo */,
+                        'zoxan2gi' /* Changer de photo */,
                       ),
                       options: FFButtonOptions(
                         width: 140.0,
@@ -219,7 +219,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: Color(0xFF191970),
                         textStyle:
                             FlutterFlowTheme.of(context).bodySmall.override(
                                   fontFamily: 'Inter',
@@ -246,7 +246,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          '3p9y21e2' /* Your Name */,
+                          '3p9y21e2' /* Nom et prénom */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).bodySmall.override(
@@ -290,8 +290,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         filled: true,
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                        fillColor: Color(0xFF191970),
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
@@ -315,7 +314,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          'z4fstn5l' /* Email Address */,
+                          'z4fstn5l' /* Adresse email */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).bodySmall.override(
@@ -359,8 +358,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         filled: true,
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                        fillColor: Color(0xFF191970),
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
@@ -385,7 +383,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          '8h1cjk5a' /* Your Age */,
+                          '8h1cjk5a' /* Votre Âge */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).bodySmall.override(
@@ -429,8 +427,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         filled: true,
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                        fillColor: Color(0xFF191970),
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
@@ -455,7 +452,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          'zvymbfia' /* Your Title */,
+                          'zvymbfia' /* Votre Bio */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).bodySmall.override(
@@ -496,8 +493,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         filled: true,
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                        fillColor: Color(0xFF191970),
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
@@ -528,7 +524,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         context.pop();
                       },
                       text: FFLocalizations.of(context).getText(
-                        'i6edcl52' /* Save Changes */,
+                        'i6edcl52' /* Modification */,
                       ),
                       options: FFButtonOptions(
                         width: 230.0,

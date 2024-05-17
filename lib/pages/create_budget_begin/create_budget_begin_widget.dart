@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -93,7 +94,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: Color(0xFF191970),
       body: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -107,20 +108,20 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(16.0),
                   bottomRight: Radius.circular(16.0),
-                  topLeft: Radius.circular(0.0),
-                  topRight: Radius.circular(0.0),
+                  topLeft: Radius.circular(16.0),
+                  topRight: Radius.circular(16.0),
                 ),
               ),
               child: Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: MediaQuery.sizeOf(context).height * 0.8,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  color: Color(0xFF191970),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(16.0),
                     bottomRight: Radius.circular(16.0),
-                    topLeft: Radius.circular(0.0),
-                    topRight: Radius.circular(0.0),
+                    topLeft: Radius.circular(16.0),
+                    topRight: Radius.circular(16.0),
                   ),
                 ),
                 child: Padding(
@@ -135,12 +136,13 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                         children: [
                           Text(
                             FFLocalizations.of(context).getText(
-                              'xod9iwab' /* Create Budget */,
+                              'xod9iwab' /* Création du budget */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  fontSize: 22.0,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -174,7 +176,18 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                         constraints: BoxConstraints(
                           maxWidth: MediaQuery.sizeOf(context).width * 0.8,
                         ),
-                        decoration: BoxDecoration(),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(8.0),
+                            bottomRight: Radius.circular(8.0),
+                            topLeft: Radius.circular(8.0),
+                            topRight: Radius.circular(8.0),
+                          ),
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                          ),
+                        ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
@@ -193,7 +206,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                     fontWeight: FontWeight.w300,
                                   ),
                               hintText: FFLocalizations.of(context).getText(
-                                'wih71x51' /* Amount */,
+                                'wih71x51' /* Montant */,
                               ),
                               hintStyle: FlutterFlowTheme.of(context)
                                   .displaySmall
@@ -206,7 +219,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                   ),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).alternate,
+                                  color: Colors.white,
                                   width: 2.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
@@ -263,7 +276,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'qk15nsmc' /* Budget Name */,
+                              'qk15nsmc' /* Nom du budget */,
                             ),
                             labelStyle: FlutterFlowTheme.of(context)
                                 .titleMedium
@@ -447,7 +460,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                     budgetCreated: getCurrentTimestamp,
                                     budgetDescription:
                                         _model.textController3.text,
-                                    budgetTime: '45 days left',
+                                    budgetTime: 'Plus que 45 jours',
                                     userBudgets:
                                         buttonBudgetListRecord?.budgetUser,
                                     budgetAmountNumber: int.tryParse(
@@ -463,10 +476,10 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 ),
                               });
 
-                              context.pushNamed('MY_Card');
+                              context.pushNamed('NewsCrypto');
                             },
                             text: FFLocalizations.of(context).getText(
-                              'v2shqq3z' /* Create Budget */,
+                              'v2shqq3z' /* Établir un budget */,
                             ),
                             options: FFButtonOptions(
                               width: 300.0,
@@ -475,7 +488,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                   0.0, 0.0, 0.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).tertiary,
+                              color: Color(0x90191970),
                               textStyle: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
@@ -502,11 +515,11 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
             ),
             Text(
               FFLocalizations.of(context).getText(
-                'knu0nxbp' /* Tap above to complete request */,
+                'knu0nxbp' /* Tapez ci-dessus pour compléter... */,
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Inter',
-                    color: Color(0x43000000),
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
                     letterSpacing: 0.0,
                   ),
             ),

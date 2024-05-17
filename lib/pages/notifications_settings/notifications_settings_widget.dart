@@ -42,9 +42,9 @@ class _NotificationsSettingsWidgetState
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: Color(0xFF191970),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: Color(0xFF191970),
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -113,11 +113,12 @@ class _NotificationsSettingsWidgetState
                       Expanded(
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'r72zvrv5' /* Choose what notifcations you w... */,
+                            'r72zvrv5' /* Choisissez les notifications q... */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Inter',
+                                    fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
                         ),
@@ -134,24 +135,25 @@ class _NotificationsSettingsWidgetState
                     },
                     title: Text(
                       FFLocalizations.of(context).getText(
-                        'gjygkr0n' /* Push Notifications */,
+                        'gjygkr0n' /* Notifications en temps réel */,
                       ),
                       style:
                           FlutterFlowTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Readex Pro',
+                                fontSize: 20.0,
                                 letterSpacing: 0.0,
                               ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
-                        '3y3yhxbk' /* Receive Push notifications fro... */,
+                        '3y3yhxbk' /* Recevoir des notifications pus... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
                             fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                     ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
+                    tileColor: Color(0xFF191970),
                     activeColor: FlutterFlowTheme.of(context).tertiary,
                     activeTrackColor: FlutterFlowTheme.of(context).primary,
                     dense: false,
@@ -167,54 +169,24 @@ class _NotificationsSettingsWidgetState
                   },
                   title: Text(
                     FFLocalizations.of(context).getText(
-                      '1ytebj35' /* Email Notifications */,
+                      '1ytebj35' /* Notifications par e-mail */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineSmall.override(
                           fontFamily: 'Readex Pro',
+                          fontSize: 20.0,
                           letterSpacing: 0.0,
                         ),
                   ),
                   subtitle: Text(
                     FFLocalizations.of(context).getText(
-                      '9lvh5nst' /* Receive email notifications fr... */,
+                      '9lvh5nst' /* Recevoir des notifications par... */,
                     ),
                     style: FlutterFlowTheme.of(context).bodySmall.override(
                           fontFamily: 'Inter',
                           letterSpacing: 0.0,
                         ),
                   ),
-                  tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiary,
-                  activeTrackColor: FlutterFlowTheme.of(context).primary,
-                  dense: false,
-                  controlAffinity: ListTileControlAffinity.trailing,
-                  contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 12.0),
-                ),
-                SwitchListTile.adaptive(
-                  value: _model.switchListTileValue3 ??= true,
-                  onChanged: (newValue) async {
-                    setState(() => _model.switchListTileValue3 = newValue!);
-                  },
-                  title: Text(
-                    FFLocalizations.of(context).getText(
-                      '69d2j74u' /* Location Services */,
-                    ),
-                    style: FlutterFlowTheme.of(context).headlineSmall.override(
-                          fontFamily: 'Readex Pro',
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                  subtitle: Text(
-                    FFLocalizations.of(context).getText(
-                      '3k8cuv0d' /* Allow us to track your locatio... */,
-                    ),
-                    style: FlutterFlowTheme.of(context).bodySmall.override(
-                          fontFamily: 'Inter',
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                  tileColor: FlutterFlowTheme.of(context).secondaryBackground,
+                  tileColor: Color(0xFF191970),
                   activeColor: FlutterFlowTheme.of(context).tertiary,
                   activeTrackColor: FlutterFlowTheme.of(context).primary,
                   dense: false,
@@ -229,7 +201,7 @@ class _NotificationsSettingsWidgetState
                       context.pop();
                     },
                     text: FFLocalizations.of(context).getText(
-                      'isgrgbfs' /* Save Changes */,
+                      'isgrgbfs' /* Modifier */,
                     ),
                     options: FFButtonOptions(
                       width: 190.0,

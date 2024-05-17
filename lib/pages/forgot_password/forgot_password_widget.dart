@@ -42,9 +42,9 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF191970),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFF191970),
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -62,7 +62,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
         ),
         title: Text(
           FFLocalizations.of(context).getText(
-            'g416xg9f' /* Forgot Password */,
+            'g416xg9f' /* Mot de passe oublié */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
                 fontFamily: 'Readex Pro',
@@ -95,10 +95,11 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   Expanded(
                     child: Text(
                       FFLocalizations.of(context).getText(
-                        'xaiad71o' /* Enter the email associated wit... */,
+                        'xaiad71o' /* Saisissez l'adresse électroniq... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
                             fontFamily: 'Inter',
+                            fontSize: 16.0,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -114,14 +115,14 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                 obscureText: false,
                 decoration: InputDecoration(
                   labelText: FFLocalizations.of(context).getText(
-                    'u4nuk910' /* Email Address */,
+                    'u4nuk910' /* Adresse email */,
                   ),
                   labelStyle: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily: 'Inter',
                         letterSpacing: 0.0,
                       ),
                   hintText: FFLocalizations.of(context).getText(
-                    '37kotxi0' /* Enter your email... */,
+                    '37kotxi0' /* Saisissez votre email... */,
                   ),
                   hintStyle: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily: 'Inter',
@@ -156,7 +157,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   filled: true,
-                  fillColor: FlutterFlowTheme.of(context).secondaryBackground,
+                  fillColor: Color(0xFF191970),
                   contentPadding:
                       EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 20.0, 24.0),
                 ),
@@ -188,7 +189,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   );
                 },
                 text: FFLocalizations.of(context).getText(
-                  'hiwpaze1' /* Send Reset Link */,
+                  'hiwpaze1' /* Envoyer le lien de réinitialis... */,
                 ),
                 options: FFButtonOptions(
                   width: 190.0,

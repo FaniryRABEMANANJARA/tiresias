@@ -47,7 +47,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF191970),
       body: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -64,6 +64,15 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       'assets/images/login_bg@2x.png',
                     ).image,
                   ),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(0.0),
+                    bottomRight: Radius.circular(0.0),
+                    topLeft: Radius.circular(8.0),
+                    topRight: Radius.circular(0.0),
+                  ),
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).primaryText,
+                  ),
                 ),
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
@@ -75,23 +84,22 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             24.0, 24.0, 0.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            if (Theme.of(context).brightness == Brightness.dark)
-                              Image.asset(
-                                'assets/images/finWallet_logo_landscape.png',
-                                width: 170.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8.0),
                               ),
-                            if (!(Theme.of(context).brightness ==
-                                Brightness.dark))
-                              Image.asset(
-                                'assets/images/finWallet_logo_landscapeDark@3x.png',
-                                width: 170.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(24.0),
+                                child: Image.asset(
+                                  'assets/images/WhatsApp_Image_2024-04-23_at_08.59.01-removebg-preview.png',
+                                  width: 170.0,
+                                  height: 130.0,
+                                  fit: BoxFit.fitWidth,
+                                ),
                               ),
+                            ),
                           ],
                         ),
                       ),
@@ -107,12 +115,15 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 children: [
                                   Text(
                                     FFLocalizations.of(context).getText(
-                                      'o07j3mgv' /* Welcome back */,
+                                      'o07j3mgv' /* Bienvenue à nouveau */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
                                           fontFamily: 'Readex Pro',
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          fontSize: 30.0,
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -126,12 +137,15 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'fzxvw3mu' /* Login to access your account b... */,
+                                        'fzxvw3mu' /* Connectez-vous pour accéder à ... */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
                                             fontFamily: 'Inter',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                            fontSize: 14.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -149,17 +163,20 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   decoration: InputDecoration(
                                     labelText:
                                         FFLocalizations.of(context).getText(
-                                      'a9j78va9' /* Email Address */,
+                                      'a9j78va9' /* Adresse e-mail */,
                                     ),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Inter',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
+                                          fontSize: 16.0,
                                           letterSpacing: 0.0,
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'i7f18cve' /* Enter your email... */,
+                                      'i7f18cve' /* Saisissez votre email... */,
                                     ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -169,7 +186,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0x00000000),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -196,8 +214,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    fillColor: Color(0xFF191970),
                                     contentPadding:
                                         EdgeInsetsDirectional.fromSTEB(
                                             20.0, 24.0, 20.0, 24.0),
@@ -224,17 +241,20 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   decoration: InputDecoration(
                                     labelText:
                                         FFLocalizations.of(context).getText(
-                                      'wztjmbn8' /* Password */,
+                                      'wztjmbn8' /* Mot de passe */,
                                     ),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
                                           fontFamily: 'Inter',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
+                                          fontSize: 16.0,
                                           letterSpacing: 0.0,
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'lw1jpm1f' /* Enter your password... */,
+                                      'lw1jpm1f' /* Saisissez votre mot de passe..... */,
                                     ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -244,7 +264,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0x00000000),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -271,8 +292,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    fillColor: Color(0xFF191970),
                                     contentPadding:
                                         EdgeInsetsDirectional.fromSTEB(
                                             20.0, 24.0, 20.0, 24.0),
@@ -315,7 +335,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         context.pushNamed('forgotPassword');
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'm2xyjvuf' /* Forgot Password? */,
+                                        'm2xyjvuf' /* Mot de passe oublié ? */,
                                       ),
                                       options: FFButtonOptions(
                                         width: 170.0,
@@ -330,11 +350,15 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Inter',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
                                               letterSpacing: 0.0,
                                             ),
                                         elevation: 0.0,
                                         borderSide: BorderSide(
-                                          color: Colors.transparent,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
                                           width: 1.0,
                                         ),
                                         borderRadius:
@@ -358,10 +382,10 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       }
 
                                       context.goNamedAuth(
-                                          'MY_Card', context.mounted);
+                                          'homePage', context.mounted);
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'qbmoi1av' /* Login */,
+                                      'qbmoi1av' /* Connexion */,
                                     ),
                                     options: FFButtonOptions(
                                       width: 120.0,
@@ -393,48 +417,47 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      context.pushNamed('registerAccount');
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.sizeOf(context).width *
-                                          0.8,
-                                      height: 44.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                      ),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            FFLocalizations.of(context).getText(
-                                              'cjqb8ial' /* Don't have an account? */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Inter',
-                                                  letterSpacing: 0.0,
-                                                ),
+                                  Container(
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.8,
+                                    height: 44.0,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF191970),
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          FFLocalizations.of(context).getText(
+                                            'cjqb8ial' /* Vous n'avez pas de compte ? */,
                                           ),
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    24.0, 0.0, 4.0, 0.0),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Inter',
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  24.0, 0.0, 4.0, 0.0),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context
+                                                  .pushNamed('registerAccount');
+                                            },
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'a0iimirx' /* Create */,
+                                                'a0iimirx' /* Créer */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -449,14 +472,24 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                       ),
                                             ),
                                           ),
-                                          Icon(
+                                        ),
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            context
+                                                .pushNamed('registerAccount');
+                                          },
+                                          child: Icon(
                                             Icons.arrow_forward_rounded,
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
                                             size: 24.0,
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ],
@@ -467,7 +500,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             GoRouter.of(context).prepareAuthEvent();
@@ -483,10 +516,10 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   budgetUser: currentUserReference,
                                 ));
 
-                            context.goNamedAuth('MY_Card', context.mounted);
+                            context.goNamedAuth('homePage', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
-                            '1zqiw31h' /* Continue as Guest */,
+                            '1zqiw31h' /* Continuer en tant qu'invité */,
                           ),
                           options: FFButtonOptions(
                             width: 230.0,
@@ -495,8 +528,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 0.0, 0.0, 0.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: Color(0xFF191970),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -507,7 +539,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 ),
                             elevation: 3.0,
                             borderSide: BorderSide(
-                              color: Colors.transparent,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(30.0),

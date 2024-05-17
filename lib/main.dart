@@ -11,7 +11,6 @@ import 'backend/firebase/firebase_config.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'flutter_flow/nav/nav.dart';
 import 'index.dart';
@@ -121,7 +120,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'MY_Card';
+  String _currentPageName = 'homePage';
   late Widget? _currentPage;
 
   @override
@@ -135,9 +134,8 @@ class _NavBarPageState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     final tabs = {
       'homePage': HomePageWidget(),
-      'MY_Card': MYCardWidget(),
+      'BitcoinPrice': BitcoinPriceWidget(),
       'MY_Budgets': MYBudgetsWidget(),
-      'budgetDetails': BudgetDetailsWidget(),
       'MY_profilePage': MYProfilePageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -150,8 +148,8 @@ class _NavBarPageState extends State<NavBarPage> {
           _currentPage = null;
           _currentPageName = tabs.keys.toList()[i];
         }),
-        backgroundColor: FlutterFlowTheme.of(context).accent3,
-        selectedItemColor: FlutterFlowTheme.of(context).primary,
+        backgroundColor: Color(0x90191970),
+        selectedItemColor: Color(0xFF95A1AC),
         unselectedItemColor: FlutterFlowTheme.of(context).secondaryBackground,
         showSelectedLabels: true,
         showUnselectedLabels: true,
@@ -162,6 +160,10 @@ class _NavBarPageState extends State<NavBarPage> {
               Icons.home_outlined,
               size: 24.0,
             ),
+            activeIcon: Icon(
+              Icons.home_rounded,
+              size: 24.0,
+            ),
             label: FFLocalizations.of(context).getText(
               'c805m53i' /* Acceuil */,
             ),
@@ -169,39 +171,20 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.credit_card,
-              size: 24.0,
-            ),
-            activeIcon: FaIcon(
-              FontAwesomeIcons.solidCreditCard,
-              size: 20.0,
-            ),
-            label: FFLocalizations.of(context).getText(
-              'm8rhanhc' /* Carte */,
-            ),
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.stacked_line_chart_rounded,
-              size: 24.0,
-            ),
-            activeIcon: Icon(
-              Icons.stacked_line_chart_rounded,
-              size: 24.0,
-            ),
-            label: FFLocalizations.of(context).getText(
-              'ofz2zvlc' /* Analyser */,
-            ),
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
               Icons.currency_bitcoin,
+            ),
+            label: FFLocalizations.of(context).getText(
+              '994zen92' /* BitCoin */,
+            ),
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.wallet_sharp,
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'l53kroui' /* Trader */,
+              'ofz2zvlc' /* Wallet */,
             ),
             tooltip: '',
           ),
@@ -215,7 +198,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              '8srr2k0j' /* Profile */,
+              '8srr2k0j' /* Profil */,
             ),
             tooltip: '',
           )

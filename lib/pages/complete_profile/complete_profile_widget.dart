@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
+import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -249,9 +250,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF191970),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFF191970),
         automaticallyImplyLeading: false,
         title: Text(
           FFLocalizations.of(context).getText(
@@ -296,9 +297,9 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           await selectMediaWithSourceBottomSheet(
                         context: context,
                         allowPhoto: true,
-                        backgroundColor:
-                            FlutterFlowTheme.of(context).primaryText,
-                        textColor: FlutterFlowTheme.of(context).primaryText,
+                        backgroundColor: FlutterFlowTheme.of(context).primary,
+                        textColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
                         pickerFontFamily: 'Lexend Deca',
                       );
                       if (selectedMedia != null &&
@@ -370,15 +371,19 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                   ).animateOnPageLoad(
                       animationsMap['circleImageOnPageLoadAnimation']!),
                 ),
-                Text(
-                  FFLocalizations.of(context).getText(
-                    'r6npjsue' /* Upload a photo for us to easil... */,
-                  ),
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Inter',
-                        letterSpacing: 0.0,
-                      ),
-                ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation']!),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      'r6npjsue' /* Téléchargez une photo pour que... */,
+                    ),
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Inter',
+                          letterSpacing: 0.0,
+                        ),
+                  ).animateOnPageLoad(
+                      animationsMap['textOnPageLoadAnimation']!),
+                ),
                 Padding(
                   padding:
                       EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
@@ -388,7 +393,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(
-                        'sdptn7dd' /* Your Name */,
+                        'sdptn7dd' /* Nom et prénom(s) */,
                       ),
                       labelStyle:
                           FlutterFlowTheme.of(context).bodySmall.override(
@@ -429,8 +434,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                      fillColor: Color(0xFF191970),
                       contentPadding: EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
@@ -452,7 +456,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(
-                        'n636qnrx' /* Your Age */,
+                        'n636qnrx' /* Votre âge */,
                       ),
                       labelStyle:
                           FlutterFlowTheme.of(context).bodySmall.override(
@@ -496,8 +500,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                      fillColor: Color(0xFF191970),
                       contentPadding: EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
@@ -520,16 +523,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(
-                        '72ii0waq' /* Your Title */,
+                        '72ii0waq' /* Bio */,
                       ),
                       labelStyle:
                           FlutterFlowTheme.of(context).bodySmall.override(
                                 fontFamily: 'Inter',
                                 letterSpacing: 0.0,
                               ),
-                      hintText: FFLocalizations.of(context).getText(
-                        'pf8glhkg' /* What is your position? */,
-                      ),
                       hintStyle:
                           FlutterFlowTheme.of(context).bodySmall.override(
                                 fontFamily: 'Inter',
@@ -564,8 +564,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                      fillColor: Color(0xFF191970),
                       contentPadding: EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                     ),
@@ -606,13 +605,14 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             age:
                                 int.tryParse(_model.yourAgeTextController.text),
                             userTitle: _model.yourTitleTextController.text,
-                            photoUrl: '',
+                            photoUrl: _model.uploadedFileUrl,
+                            role: 'membre',
                           ));
 
                           context.pushNamed('onboarding');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'hbhd3bdt' /* Complete Profile */,
+                          'hbhd3bdt' /* Valider */,
                         ),
                         options: FFButtonOptions(
                           width: 230.0,
@@ -666,7 +666,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                           context.pushNamed('onboarding');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'w75dikic' /* Skip for Now */,
+                          'w75dikic' /* Sautez pour l'instant */,
                         ),
                         options: FFButtonOptions(
                           width: 140.0,
@@ -675,13 +675,13 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                               0.0, 0.0, 0.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: Color(0xFF191970),
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
                                 fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 12.0,
                                 letterSpacing: 0.0,
                               ),
                           elevation: 0.0,

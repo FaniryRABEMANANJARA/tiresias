@@ -40,9 +40,9 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF191970),
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFF191970),
         automaticallyImplyLeading: false,
         leading: InkWell(
           splashColor: Colors.transparent,
@@ -60,10 +60,11 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
         ),
         title: Text(
           FFLocalizations.of(context).getText(
-            'alczfiiy' /* Privacy Policy */,
+            'alczfiiy' /* Politique de confidentialité */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
                 fontFamily: 'Readex Pro',
+                fontSize: 20.0,
                 letterSpacing: 0.0,
               ),
         ),
@@ -101,12 +102,13 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                       Expanded(
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'fvsfg5on' /* How we use your data */,
+                            'fvsfg5on' /* Comment utilisons-nous vos don... */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
                                 fontFamily: 'Readex Pro',
+                                fontSize: 30.0,
                                 letterSpacing: 0.0,
                               ),
                         ),
@@ -123,11 +125,12 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                       Expanded(
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'nbiyrnzl' /* Lorem ipsum dolor sit amet, co... */,
+                            'nbiyrnzl' /* Chez [Nom de l'entreprise], no... */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Inter',
+                                    fontSize: 14.0,
                                     letterSpacing: 0.0,
                                   ),
                         ),

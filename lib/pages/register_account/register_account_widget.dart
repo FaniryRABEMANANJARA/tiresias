@@ -50,7 +50,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Color(0xFF191970),
       body: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -75,31 +75,6 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                     children: [
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 24.0, 0.0, 20.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            if (Theme.of(context).brightness == Brightness.dark)
-                              Image.asset(
-                                'assets/images/finWallet_logo_landscape.png',
-                                width: 170.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
-                              ),
-                            if (!(Theme.of(context).brightness ==
-                                Brightness.dark))
-                              Image.asset(
-                                'assets/images/finWallet_logo_landscapeDark@3x.png',
-                                width: 170.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
-                              ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         child: SingleChildScrollView(
                           child: Column(
@@ -108,17 +83,30 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                             children: [
                               Row(
                                 mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'gpokmd81' /* Get Started */,
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(8.0),
+                                        bottomRight: Radius.circular(8.0),
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
                                     ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .displaySmall
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          letterSpacing: 0.0,
-                                        ),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(24.0),
+                                      child: Image.asset(
+                                        'assets/images/WhatsApp_Image_2024-04-23_at_08.59.01-removebg-preview.png',
+                                        width: 200.0,
+                                        height: 150.0,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
                                   ),
                                 ],
                               ),
@@ -127,15 +115,18 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                     0.0, 12.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'oitrrwgg' /* Create your account below. */,
+                                        'oitrrwgg' /* Créer votre compte ci-dessous. */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
                                             fontFamily: 'Inter',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -152,7 +143,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   decoration: InputDecoration(
                                     labelText:
                                         FFLocalizations.of(context).getText(
-                                      'gcwdqm4g' /* Email Address */,
+                                      'gcwdqm4g' /* Adresse email */,
                                     ),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -162,7 +153,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'iam0xgwx' /* Enter your email... */,
+                                      'iam0xgwx' /* Entrez votre email... */,
                                     ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -172,7 +163,8 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0x00000000),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -199,8 +191,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    fillColor: Color(0xFF191970),
                                     contentPadding:
                                         EdgeInsetsDirectional.fromSTEB(
                                             20.0, 24.0, 20.0, 24.0),
@@ -227,7 +218,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   decoration: InputDecoration(
                                     labelText:
                                         FFLocalizations.of(context).getText(
-                                      'bqv15dcf' /* Password */,
+                                      'bqv15dcf' /* Mot de passe */,
                                     ),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -237,7 +228,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'joih97mn' /* Enter your password... */,
+                                      'joih97mn' /* Entrez votre mot de passe... */,
                                     ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -247,7 +238,8 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0x00000000),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -274,8 +266,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    fillColor: Color(0xFF191970),
                                     contentPadding:
                                         EdgeInsetsDirectional.fromSTEB(
                                             20.0, 24.0, 20.0, 24.0),
@@ -290,7 +281,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                             ? Icons.visibility_outlined
                                             : Icons.visibility_off_outlined,
                                         color: FlutterFlowTheme.of(context)
-                                            .secondaryText,
+                                            .secondaryBackground,
                                         size: 20.0,
                                       ),
                                     ),
@@ -318,7 +309,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   decoration: InputDecoration(
                                     labelText:
                                         FFLocalizations.of(context).getText(
-                                      'rzpiwq9p' /* Confirm Password */,
+                                      'rzpiwq9p' /* Confirmer le mot de passe */,
                                     ),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -328,7 +319,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'eyfkffka' /* Enter your password... */,
+                                      'eyfkffka' /* Entrez votre mot de passe... */,
                                     ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -338,7 +329,8 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0x00000000),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -365,8 +357,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     filled: true,
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    fillColor: Color(0xFF191970),
                                     contentPadding:
                                         EdgeInsetsDirectional.fromSTEB(
                                             20.0, 24.0, 20.0, 24.0),
@@ -381,7 +372,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                             ? Icons.visibility_outlined
                                             : Icons.visibility_off_outlined,
                                         color: FlutterFlowTheme.of(context)
-                                            .secondaryText,
+                                            .secondaryBackground,
                                         size: 20.0,
                                       ),
                                     ),
@@ -438,7 +429,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                         'completeProfile', context.mounted);
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    '5kmjfwsk' /* Create Account */,
+                                    '5kmjfwsk' /* Créer un compte */,
                                   ),
                                   options: FFButtonOptions(
                                     width: 160.0,
@@ -468,13 +459,16 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    width:
-                                        MediaQuery.sizeOf(context).width * 0.8,
+                                    width: MediaQuery.sizeOf(context).width *
+                                        0.862,
                                     height: 44.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Color(0xFF191970),
                                       borderRadius: BorderRadius.circular(8.0),
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
                                     ),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -498,7 +492,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                            MainAxisAlignment.start,
                                         children: [
                                           Icon(
                                             Icons.arrow_back_rounded,
@@ -513,7 +507,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '3twynvfz' /* Login */,
+                                                '3twynvfz' /* Se connecter */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -530,7 +524,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                           ),
                                           Text(
                                             FFLocalizations.of(context).getText(
-                                              '9ssznj0g' /* Already have an account? */,
+                                              '9ssznj0g' /* Vous avez déjà un compte ? */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -567,10 +561,10 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                   budgetUser: currentUserReference,
                                 ));
 
-                            context.goNamedAuth('MY_Card', context.mounted);
+                            context.goNamedAuth('homePage', context.mounted);
                           },
                           text: FFLocalizations.of(context).getText(
-                            '3ugmx2zp' /* Continue as Guest */,
+                            '3ugmx2zp' /* Continuer en tant qu'invité */,
                           ),
                           options: FFButtonOptions(
                             width: 230.0,
