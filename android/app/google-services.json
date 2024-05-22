@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "127728801279",
+    "project_id": "tiresias-9c18a",
+    "storage_bucket": "tiresias-9c18a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127728801279:android:bf161d053da425271543ca",
+        "android_client_info": {
+          "package_name": "com.flutterflow.finwallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8aeneW0erQC49V3yM00VK6l2NLMrYTho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
