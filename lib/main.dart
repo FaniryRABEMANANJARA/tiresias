@@ -171,10 +171,10 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.currency_bitcoin,
+              Icons.line_axis,
             ),
             label: FFLocalizations.of(context).getText(
-              '994zen92' /* BitCoin */,
+              '994zen92' /* Eur/Usd */,
             ),
             tooltip: '',
           ),

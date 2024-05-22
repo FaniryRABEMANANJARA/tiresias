@@ -38,7 +38,7 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: Color(0xFF191970),
       body: SafeArea(
         top: true,
         child: Column(

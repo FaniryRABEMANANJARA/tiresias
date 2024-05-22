@@ -1539,16 +1539,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$25,202',
     },
     '30yef7fj': {
-      'en': 'Payroll Due',
+      'en': 'Prix Euro',
       'ar': 'الرواتب المستحقة',
       'de': 'Gehaltsabrechnung fällig',
       'es': 'Vencimiento de nómina',
-    },
-    'zrx9e6tv': {
-      'en': '\$12,245',
-      'ar': '12245 دولارًا',
-      'de': '12.245 \$',
-      'es': '\$12,245',
     },
     '1cjqanzg': {
       'en': 'Date',
@@ -1556,29 +1550,29 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': 'Belastungsdatum',
       'es': 'Fecha de débito',
     },
+    '4dgbx46t': {
+      'en': 'Date d\'hier',
+      'ar': 'باقي 4 ايام',
+      'de': 'noch 4 Tage',
+      'es': '4 días restantes',
+    },
     'n87v5tth': {
-      'en': 'Marketing Budget',
+      'en': 'Prix USD',
       'ar': 'ميزانية التسويق',
       'de': 'Werbehaushalt, Werbebudget',
       'es': 'Presupuesto de marketing',
     },
-    'l5pw5c8c': {
-      'en': '\$4,000',
-      'ar': '4000 دولار',
-      'de': '4.000 \$',
-      'es': '\$4,000',
-    },
     '7i0a44qa': {
-      'en': 'Total ',
+      'en': 'Date ',
       'ar': 'إجمال الصرف',
       'de': 'Gesamtausgaben',
       'es': 'Total gastado',
     },
-    '9a2ya1la': {
-      'en': '\$3,402',
-      'ar': '3،402 دولار',
-      'de': '\$3.402',
-      'es': '\$3,402',
+    'n1o498d9': {
+      'en': 'Date d\'hier',
+      'ar': 'باقي 4 ايام',
+      'de': 'noch 4 Tage',
+      'es': '4 días restantes',
     },
     'lmo3ko2i': {
       'en': 'Services rapides',
@@ -1587,13 +1581,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Servicios rápidos',
     },
     '774itrkn': {
-      'en': 'Ma banque',
+      'en': 'Les Prix',
       'ar': 'بنكي',
       'de': 'Meine Bank',
       'es': 'Mi banco',
     },
     'xs2as0vf': {
-      'en': 'Cours Bitcoin',
+      'en': ' EUR/USD',
       'ar': 'تحويل',
       'de': 'Transfer',
       'es': 'Transferir',
@@ -1776,14 +1770,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Casa',
     },
   },
-  // Historique
+  // HistoriquePrix
   {
-    '2upqxx8m': {
-      'en': 'Historique des prix',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
     'g552jz68': {
       'en':
           'Sélectionnez une période pour afficher le graphique de l\'historique des prix.',
@@ -1821,20 +1809,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': '',
       'es': '',
     },
-    '61ev4e2g': {
-      'en': 'Graphique',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'h1j1lhlm': {
-      'en': 'Transactions récentes',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
     '0t0oh4cl': {
-      'en': 'Présentation du budget',
+      'en': 'Historique des prix',
       'ar': '',
       'de': '',
       'es': '',
@@ -1842,26 +1818,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // BitcoinPrice
   {
-    '0iip5de2': {
-      'en': 'Le prix actuel du bitcoin n\'est pas disponible pour le moment.',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'me39i3pu': {
-      'en': 'Actualiser',
-      'ar': '',
-      'de': '',
-      'es': '',
-    },
-    'ml7kkj9e': {
-      'en': 'Cours du bitcoin',
+    'reb0yfzv': {
+      'en': 'Cours du EUR/USD',
       'ar': '',
       'de': '',
       'es': '',
     },
     '994zen92': {
-      'en': 'BitCoin',
+      'en': 'Eur/Usd',
       'ar': '',
       'de': '',
       'es': '',
@@ -2369,6 +2333,51 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '2f2qnzvx': {
       'en': 'Home',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+  },
+  // LesPrix
+  {
+    'ebbzb5uz': {
+      'en': 'Taux d\'intérêt des devises',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'yyh00tw6': {
+      'en': 'USD to EUR',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    '472ef69x': {
+      'en': 'EUR to USD',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'rdtc0lf2': {
+      'en': 'EUR to AED',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'o93eebsl': {
+      'en': 'Dernière mise à jour',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'e59s58tc': {
+      'en': 'Nouveau mise à jour',
+      'ar': '',
+      'de': '',
+      'es': '',
+    },
+    'r3bcu9th': {
+      'en': 'Les taux de change',
       'ar': '',
       'de': '',
       'es': '',

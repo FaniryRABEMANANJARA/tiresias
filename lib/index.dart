@@ -41,7 +41,8 @@ export '/pages/home_page/home_page_widget.dart' show HomePageWidget;
 export '/pages/apres/budget_d_e_l_e_t_e/budget_d_e_l_e_t_e_widget.dart'
     show BudgetDELETEWidget;
 export '/pages/profilepage/profilepage_widget.dart' show ProfilepageWidget;
-export '/affichage/historique/historique_widget.dart' show HistoriqueWidget;
+export '/affichage/historique_prix/historique_prix_widget.dart'
+    show HistoriquePrixWidget;
 export '/affichage/bitcoin_price/bitcoin_price_widget.dart'
     show BitcoinPriceWidget;
 export '/affichage/news_crypto/news_crypto_widget.dart' show NewsCryptoWidget;
@@ -58,3 +59,4 @@ export '/affichage/ajout_actualite/ajout_actualite_widget.dart'
     show AjoutActualiteWidget;
 export '/affichage/detailsactualite/detailsactualite_widget.dart'
     show DetailsactualiteWidget;
+export '/affichage/les_prix/les_prix_widget.dart' show LesPrixWidget;

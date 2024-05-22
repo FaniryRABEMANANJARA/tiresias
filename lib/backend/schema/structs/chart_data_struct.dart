@@ -11,14 +11,14 @@ import '/flutter_flow/flutter_flow_util.dart';
 class ChartDataStruct extends FFFirebaseStruct {
   ChartDataStruct({
     String? xTitle,
-    int? yValue1,
-    int? yValue2,
     DateTime? date,
+    double? yValue1,
+    double? yValue2,
     FirestoreUtilData firestoreUtilData = const FirestoreUtilData(),
   })  : _xTitle = xTitle,
+        _date = date,
         _yValue1 = yValue1,
         _yValue2 = yValue2,
-        _date = date,
         super(firestoreUtilData);
 
   // "xTitle" field.
@@ -27,31 +27,31 @@ class ChartDataStruct extends FFFirebaseStruct {
   set xTitle(String? val) => _xTitle = val;
   bool hasXTitle() => _xTitle != null;
 
-  // "yValue1" field.
-  int? _yValue1;
-  int get yValue1 => _yValue1 ?? 0;
-  set yValue1(int? val) => _yValue1 = val;
-  void incrementYValue1(int amount) => _yValue1 = yValue1 + amount;
-  bool hasYValue1() => _yValue1 != null;
-
-  // "yValue2" field.
-  int? _yValue2;
-  int get yValue2 => _yValue2 ?? 0;
-  set yValue2(int? val) => _yValue2 = val;
-  void incrementYValue2(int amount) => _yValue2 = yValue2 + amount;
-  bool hasYValue2() => _yValue2 != null;
-
   // "date" field.
   DateTime? _date;
   DateTime? get date => _date;
   set date(DateTime? val) => _date = val;
   bool hasDate() => _date != null;
 
+  // "yValue1" field.
+  double? _yValue1;
+  double get yValue1 => _yValue1 ?? 0.0;
+  set yValue1(double? val) => _yValue1 = val;
+  void incrementYValue1(double amount) => _yValue1 = yValue1 + amount;
+  bool hasYValue1() => _yValue1 != null;
+
+  // "yValue2" field.
+  double? _yValue2;
+  double get yValue2 => _yValue2 ?? 0.0;
+  set yValue2(double? val) => _yValue2 = val;
+  void incrementYValue2(double amount) => _yValue2 = yValue2 + amount;
+  bool hasYValue2() => _yValue2 != null;
+
   static ChartDataStruct fromMap(Map<String, dynamic> data) => ChartDataStruct(
         xTitle: data['xTitle'] as String?,
-        yValue1: castToType<int>(data['yValue1']),
-        yValue2: castToType<int>(data['yValue2']),
         date: data['date'] as DateTime?,
+        yValue1: castToType<double>(data['yValue1']),
+        yValue2: castToType<double>(data['yValue2']),
       );
 
   static ChartDataStruct? maybeFromMap(dynamic data) => data is Map
@@ -60,9 +60,9 @@ class ChartDataStruct extends FFFirebaseStruct {
 
   Map<String, dynamic> toMap() => {
         'xTitle': _xTitle,
+        'date': _date,
         'yValue1': _yValue1,
         'yValue2': _yValue2,
-        'date': _date,
       }.withoutNulls;
 
   @override
@@ -71,17 +71,17 @@ class ChartDataStruct extends FFFirebaseStruct {
           _xTitle,
           ParamType.String,
         ),
-        'yValue1': serializeParam(
-          _yValue1,
-          ParamType.int,
-        ),
-        'yValue2': serializeParam(
-          _yValue2,
-          ParamType.int,
-        ),
         'date': serializeParam(
           _date,
           ParamType.DateTime,
+        ),
+        'yValue1': serializeParam(
+          _yValue1,
+          ParamType.double,
+        ),
+        'yValue2': serializeParam(
+          _yValue2,
+          ParamType.double,
         ),
       }.withoutNulls;
 
@@ -92,19 +92,19 @@ class ChartDataStruct extends FFFirebaseStruct {
           ParamType.String,
           false,
         ),
+        date: deserializeParam(
+          data['date'],
+          ParamType.DateTime,
+          false,
+        ),
         yValue1: deserializeParam(
           data['yValue1'],
-          ParamType.int,
+          ParamType.double,
           false,
         ),
         yValue2: deserializeParam(
           data['yValue2'],
-          ParamType.int,
-          false,
-        ),
-        date: deserializeParam(
-          data['date'],
-          ParamType.DateTime,
+          ParamType.double,
           false,
         ),
       );
@@ -116,21 +116,21 @@ class ChartDataStruct extends FFFirebaseStruct {
   bool operator ==(Object other) {
     return other is ChartDataStruct &&
         xTitle == other.xTitle &&
+        date == other.date &&
         yValue1 == other.yValue1 &&
-        yValue2 == other.yValue2 &&
-        date == other.date;
+        yValue2 == other.yValue2;
   }
 
   @override
   int get hashCode =>
-      const ListEquality().hash([xTitle, yValue1, yValue2, date]);
+      const ListEquality().hash([xTitle, date, yValue1, yValue2]);
 }
 
 ChartDataStruct createChartDataStruct({
   String? xTitle,
-  int? yValue1,
-  int? yValue2,
   DateTime? date,
+  double? yValue1,
+  double? yValue2,
   Map<String, dynamic> fieldValues = const {},
   bool clearUnsetFields = true,
   bool create = false,
@@ -138,9 +138,9 @@ ChartDataStruct createChartDataStruct({
 }) =>
     ChartDataStruct(
       xTitle: xTitle,
+      date: date,
       yValue1: yValue1,
       yValue2: yValue2,
-      date: date,
       firestoreUtilData: FirestoreUtilData(
         clearUnsetFields: clearUnsetFields,
         create: create,

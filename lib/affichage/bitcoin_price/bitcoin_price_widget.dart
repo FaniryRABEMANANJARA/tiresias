@@ -33,36 +33,6 @@ class _BitcoinPriceWidgetState extends State<BitcoinPriceWidget> {
       setState(() {
         _model.addToChartData(ChartDataStruct(
           xTitle: 'Jan',
-          yValue1: 30000,
-          yValue2: 20000,
-        ));
-      });
-      setState(() {
-        _model.addToChartData(ChartDataStruct(
-          xTitle: 'Fev',
-          yValue1: 10000,
-          yValue2: 50000,
-        ));
-      });
-      setState(() {
-        _model.addToChartData(ChartDataStruct(
-          xTitle: 'Mars',
-          yValue1: 60000,
-          yValue2: 40000,
-        ));
-      });
-      setState(() {
-        _model.addToChartData(ChartDataStruct(
-          xTitle: 'Avr',
-          yValue1: 30500,
-          yValue2: 66000,
-        ));
-      });
-      setState(() {
-        _model.addToChartData(ChartDataStruct(
-          xTitle: 'Mai',
-          yValue1: 62000,
-          yValue2: 50000,
         ));
       });
     });
@@ -91,7 +61,7 @@ class _BitcoinPriceWidgetState extends State<BitcoinPriceWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'ml7kkj9e' /* Cours du bitcoin */,
+              'reb0yfzv' /* Cours du EUR/USD */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Readex Pro',
@@ -112,66 +82,34 @@ class _BitcoinPriceWidgetState extends State<BitcoinPriceWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                  child: Text(
-                    FFLocalizations.of(context).getText(
-                      '0iip5de2' /* Le prix actuel du bitcoin n'es... */,
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(16.0),
+                        bottomRight: Radius.circular(16.0),
+                        topLeft: Radius.circular(16.0),
+                        topRight: Radius.circular(16.0),
+                      ),
                     ),
-                    style: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily: 'Inter',
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          letterSpacing: 0.0,
-                        ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 0.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
-                    },
-                    text: FFLocalizations.of(context).getText(
-                      'me39i3pu' /* Actualiser */,
-                    ),
-                    options: FFButtonOptions(
-                      width: 150.0,
-                      height: 44.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primary,
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleMedium.override(
-                                fontFamily: 'Inter',
-                                letterSpacing: 0.0,
+                    child: SingleChildScrollView(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                10.0, 0.0, 10.0, 0.0),
+                            child: Container(
+                              width: 400.0,
+                              height: 550.0,
+                              child: custom_widgets.ColumnChart(
+                                width: 400.0,
+                                height: 550.0,
                               ),
-                      elevation: 0.0,
-                      borderRadius: BorderRadius.circular(22.0),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                  child: SingleChildScrollView(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          width: 320.0,
-                          height: 500.0,
-                          child: custom_widgets.ColumnChart(
-                            width: 320.0,
-                            height: 500.0,
-                            chartData: _model.chartData,
-                            chartTitle: 'BitCoin 2024',
-                            date: getCurrentTimestamp,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),

@@ -268,9 +268,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ProfilepageWidget(),
         ),
         FFRoute(
-          name: 'Historique',
-          path: '/historique',
-          builder: (context, params) => HistoriqueWidget(),
+          name: 'HistoriquePrix',
+          path: '/historiquePrix',
+          builder: (context, params) => HistoriquePrixWidget(),
         ),
         FFRoute(
           name: 'BitcoinPrice',
@@ -325,6 +325,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               collectionNamePath: ['actualites'],
             ),
           ),
+        ),
+        FFRoute(
+          name: 'LesPrix',
+          path: '/lesPrix',
+          builder: (context, params) => LesPrixWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

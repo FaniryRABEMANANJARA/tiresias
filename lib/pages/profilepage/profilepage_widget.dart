@@ -323,7 +323,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                           child: Icon(
                                             Icons.account_balance_outlined,
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .secondaryText,
                                             size: 36.0,
                                           ),
                                         ),
@@ -340,7 +340,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                               'Lexend Deca',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               fontSize: 12.0,
                                             ),
                                           ),
@@ -398,7 +398,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                           child: Icon(
                                             Icons.line_axis_sharp,
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .secondaryText,
                                             size: 36.0,
                                           ),
                                         ),
@@ -410,13 +410,12 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                             FFLocalizations.of(context).getText(
                                               '8nac51xz' /* Cours Bitcoin */,
                                             ),
-                                            style: GoogleFonts.getFont(
-                                              'Lexend Deca',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                              fontSize: 12.0,
-                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelSmall
+                                                .override(
+                                                  fontFamily: 'Inter',
+                                                  letterSpacing: 0.0,
+                                                ),
                                           ),
                                         ),
                                       ],
@@ -436,7 +435,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.goNamed('Historique');
+                                  context.goNamed('HistoriquePrix');
                                 },
                                 child: Container(
                                   width:
@@ -462,7 +461,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                           child: Icon(
                                             Icons.stacked_line_chart_rounded,
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .secondaryText,
                                             size: 36.0,
                                           ),
                                         ),
@@ -478,7 +477,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                               'Lexend Deca',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               fontSize: 12.0,
                                             ),
                                           ),

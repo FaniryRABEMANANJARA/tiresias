@@ -254,7 +254,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiary,
+      backgroundColor: Color(0xFF191970),
       body: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -276,7 +276,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                 maxHeight: MediaQuery.sizeOf(context).height * 0.84,
               ),
               decoration: BoxDecoration(
-                color: FlutterFlowTheme.of(context).secondaryBackground,
+                color: Color(0xFF191970),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(16.0),
                   bottomRight: Radius.circular(16.0),
@@ -454,7 +454,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primaryBackground,
+                        color: Color(0xFF191970),
                         textStyle:
                             FlutterFlowTheme.of(context).bodySmall.override(
                                   fontFamily: 'Inter',
@@ -462,7 +462,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                 ),
                         elevation: 2.0,
                         borderSide: BorderSide(
-                          color: Colors.transparent,
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
@@ -503,10 +504,10 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 15.0,
                         ),
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                        fillColor: Color(0xFF191970),
                         elevation: 2.0,
-                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
                         borderWidth: 2.0,
                         borderRadius: 8.0,
                         margin: EdgeInsetsDirectional.fromSTEB(
@@ -554,10 +555,10 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 15.0,
                         ),
-                        fillColor:
-                            FlutterFlowTheme.of(context).secondaryBackground,
+                        fillColor: Color(0xFF191970),
                         elevation: 2.0,
-                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
                         borderWidth: 2.0,
                         borderRadius: 8.0,
                         margin: EdgeInsetsDirectional.fromSTEB(
@@ -698,7 +699,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).alternate,
+                        color: Color(0xFF191970),
                         textStyle: FlutterFlowTheme.of(context)
                             .displaySmall
                             .override(
@@ -725,7 +726,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
                   fontFamily: 'Inter',
-                  color: Color(0x43000000),
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
                   letterSpacing: 0.0,
                 ),
           ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation']!),
